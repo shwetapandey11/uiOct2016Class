@@ -1,0 +1,8 @@
+1. get the latest code from parent repo
+2. inside 10_10_2016 folder, create a new html file by your name
+3. inside that file, create html trinity (this refers to the semantic html structure)
+4. inside the section, create a form (do google on how to create a form)
+5. inside this form, create 3 input elements.
+
+*make sure to push your assignments before 5pm tomorrow.
+** make sure you follow the indentation
