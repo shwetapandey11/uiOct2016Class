@@ -1,0 +1,113 @@
+<!--start of the html doc-->
+<!doctype html>
+<!-- html attribute set to english to default the web page's rendered language as Enlish-->
+<html lang="en">
+    <!-- beginning of head of the document-->
+    <head>
+        <!-- Title tag -->
+        <title>Shweta Day 4 Assignment</title>
+        <!-- style tag to embed styles in the head-->
+        <style></style>
+        <!--script tag to add javascript to the webpage's head section-->
+        <script></script>
+        <!-- link tag to link to an external css file-->
+        <link rel="stylsheet" href="">
+        <!-- base tag is used to specify a base url for all the relative url for all the pages on the website -->
+        <base href="/home">
+        <!-- this meta tag is used to make the website responsive and scale to the width of the device being used to view the webapage-->
+        <meta name="viewport" content="width=device-width" initial-scale="1"/>
+        <!-- following meta tags to provide extra crucial information about the webpage to assist in getting found by the search engines-->
+        <meta name="description" content="This is my 4th html assignment page including all the head tags"/>
+        <meta name="keywords" content="head tags, html, form"/>
+        <!-- meta charset is used to describe the character encoding set to be used to render the website by the browser-->
+        <meta charset="UTF-8"/>
+    </head>
+    <!-- end of head of the document-->
+    <!-- beginning of the body tag-->
+    <body>
+        <!-- the main article tag for this page-->
+        <article>
+            <!-- Using the trinity structure to lay out the page-->
+            <!-- header tag is the first part of the trinity section to contain the head of the article-->
+            <header>
+                <!-- main heading for the article-->
+                <h1>This is the header for this article in this webpage.</h1>
+            </header>
+            <!-- the body, the 2nd part of the trinity structure called section-->
+            <section>Employee form below:
+                <!-- the form tag to contain the Employee Form-->
+                <form name="employeeForm">
+                    <!-- div for the name field-->
+                    <div>
+                        <!--label for the name field-->
+                        <label for="fullName">Name:</label>
+                        <!-- input field for the full name text field -->
+                        <input type="text" id="fullName" name="fullName" placeholder="Please Enter your full Name here"/>
+                    </div>
+                    <!-- break tag to create space between form elements upon rendering-->
+                    <br/>
+                    <!-- div to hold the password field-->
+                    <div>
+                        <!--label tag for the password field-->
+                        <label for="password">Password</label>
+                        <!-- input tag for the password field-->
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <br/>
+                    <div>
+                        <!-- label for phone number form field -->
+                        <label for="phoneNumber">Phone Number:</label>
+                        <!-- input field for the phone number field -->
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Please Enter your Phone Number here"/>
+                    </div>
+                    <br/>
+                    <!-- div tag to hold the label and input field for the checkbox for age group-->
+                    <div>
+                        <!-- label for the age group checkbox-->
+                        <label for="ageGroup">Are you between 18 and 40 years of Age</label>
+                        <!-- input tag for checkbox field for the age group field-->
+                        <input type="checkbox" id="ageGroup" name="ageGroup">
+                    </div>
+                    <br/>
+                    <!-- div to hold Radio buttons -->
+                    <div>
+                        <!-- label tag for the employment type radion buttons -->
+                        <label for="employmentType">Please a selection below:</label>
+                        <!-- div to hold the 1st radio button form fields -->
+                        <div id="employmentType">
+                            <!-- label for fist radio button -->
+                            <label for="fullTime">Full Time</label>
+                            <!-- input field for the 1st radio button field -->
+                            <input type="radio" id="fullTime" name="employmentType" value="fullTimeEmployment">
+                            <br/>
+                            <!-- label for 2nd radio button -->
+                            <label for="partTime">Part Time</label>
+                            <!-- 2nd radion input field -->
+                            <input type="radio" id="partTime" name="employmentType" value="partTimeEmployment">
+                        </div>
+                    </div>
+                    <br/>
+                    <!-- div to hold email form field -->
+                    <div>
+                        <!-- label tag for the email field -->
+                        <label for="email">Email:</label>
+                        <!-- input field for the email input -->
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <br/>
+                    <!-- submit button -->
+                    <button type="submit" id="submit" >Submit</button>
+                    <!-- reset button -->
+                    <button type="reset" id="reset">Reset</button>
+                <!-- end of the form tag -->
+                </form>
+            </section><!-- end of section tag -->
+            <footer>This is the footer</footer><!-- footer tag for the footer for the article field conlcuding the trinity structure -->
+        </article><!-- end of article tag-->
+
+        <!-- aside tag -->
+        <aside>
+            <iframe src="http://www.w3schools.com/tags/att_meta_charset.asp" height="500px" width="400px"></iframe>
+        </aside>
+    </body>
+</html>
