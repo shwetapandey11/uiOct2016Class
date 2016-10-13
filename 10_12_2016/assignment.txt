@@ -1,0 +1,15 @@
+1. get the latest code and inside 10_12_2016 folder create a new file with your name.
+2. make sure that head has all six elements and a description and some keywords.
+* dont write any styles or scripts. just mention them and focus on meta data
+
+3. Also, read an article on html responsive and add the correct meta data for html only, nothing else from w3schools.com
+4. Follow the trinity structure and create a form called employeeForm. this form should have:
+    i. text field
+    ii. phone field
+    iii. checkbox
+    iv. working radio button
+    v. two buttons - one submit one reset
+    vi. one email field
+    vii. one password field
+**if you need assitance, look at yesterdays folder for help. every field must have the basic attributes
+***also, have comments for every element.
