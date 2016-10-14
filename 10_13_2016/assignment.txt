@@ -1,0 +1,12 @@
+1. get the latest code and inside 10_13_2016 folder create a new folder with your name. inside this folder, create two folders:
+    i. templates
+    ii. styles
+    place html in templates, place css in styles
+* use the same form from the last assignment that you created
+
+2. do a google research on border style and apply 2px of border only to form.
+3. if you have <br> or <div> for labels in your html, then remove it and use css to place the input below the label.
+4. Do a research on 0to255.com and use hex color to make "submit" button beautiful and make sure that "cancel" button is red.
+*remember i should be able to see the words "submit" and "cancel"
+
+**refer to 0to255.com website and get the color code in hex only.

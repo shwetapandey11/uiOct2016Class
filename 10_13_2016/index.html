@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!--head of the web page-->
+    <head>
+        <!--title - this is the title of this html file-->
+        <title>DMV New License Form</title>
+
+        <!--this is internal style-->
+        <style>
+            body{
+                background-color: #eee;
+            }
+        </style>
+
+        <!--this is external style-->
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+
+    <!--body of the web page-->
+    <!--body is the rendering part of the html-->
+    <!--this is inline/attribute style-->
+    <body>
+
+        <!--main article for forms-->
+        <article>
+
+            <!--page header-->
+            <header>
+                <h1>Welcome to my website!</h1>
+            </header>
+
+            <!--main body of the page-->
+            <section>
+                <!--form for new license in dmv-->
+                <form name="newLicenseForm">
+                    <!--First Name-->
+                    <div>
+                        <label for="firstName">Applicant's First Name:</label>
+                        <input type="text" id="firstName" name="fName" placeholder="Enter your First Name"/>
+                    </div>
+                    <br />
+                    <!--Last Name-->
+                    <div>
+                        <label for="lastName">Applicant's Last Name:</label>
+                        <input type="text" id="lastName" name="lName" placeholder="Enter your Last Name" style="background-color: #fff;"/>
+                    </div>
+                    <br />
+                    <!--Phone Number-->
+                    <div>
+                        <label for="phoneNumber">Applicant's Phone Number:</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your Phone Number" />
+                    </div>
+                    <br />
+                    <!--Gender-->
+                    <div>
+                        <label for="gender">Applicant's Gender:</label>
+                        <div id="gender">
+                            <!--male-->
+                            <label for="male">Male:</label>
+                            <input type="radio" id="male" name="gender" value="Male"/>
+
+                            <!--female-->
+                            <label for="female">Female:</label>
+                            <input type="radio" id="female" name="gender" value="Female"/>
+                        </div>
+                    </div>
+                    <br />
+                    <!--senior citizen-->
+                    <div>
+                        <label for="seniorCitizen">Is applicant a senior citizen?</label>
+                        <input type="checkbox" id="seniorCitizen" name="seniorCitizen" />
+                    </div>
+                    <!--submit button-->
+                    <button type="submit" id="submit" class="btn btn-primary">
+                        <span>Submit</span>
+                    </button>
+                    <!--reset/cancel-->
+                    <button type="reset" id="reset">
+                        <span>Cancel</span>
+                    </button>
+                </form>
+            </section>
+
+            <!--footer of the page-->
+            <footer>
+                I'm at the bottom
+            </footer>
+        </article>
+    </body>
+</html>
