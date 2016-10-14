@@ -1,0 +1,68 @@
+/** adding basic font styles to the document **/
+body {
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+/** adding some very basic styles to the form **/
+form {
+    border: 2px solid #000;
+    padding: 10px;
+    width: 25%;
+    margin: 0 auto;
+}
+
+/** changing the default display property of the label and input fields to block in order for them to take up the whole width of the document and not sit next to each other, which in turn brings the input field below the labels, as required by the assignment **/
+label, input {
+    display: block;
+    margin-bottom: 0.5px;
+}
+
+/** removing space from above the radio labels to make the form fields clearer to the user **/
+input[type="radio"] {
+   margin-top: 0px
+}
+
+label {
+    margin-top: 15px;
+}
+
+/** In order to make the 2 radio buttons and the informational heading for it to look like a group, creating extra space on top and making the text slighlty different than the others  **/
+label#radioMainLabel {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+label[for="fullTime"]{
+    margin-top: 1.5px;
+}
+
+/** giving styles to the buttons which are the submit and cancel buttons to make them look more appealing **/
+button {
+    margin-top: 15px;
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    border-style:inset;
+}
+
+/** adding bluish-white radial gradient to the submit button **/
+button#submit {
+    background: radial-gradient(#097be4 50%, #fff);
+    color: #fff;
+}
+
+/** giving a radial gradient to the reset i.e. the cancel button **/
+button#reset {
+    background: radial-gradient(#f00 50%, #fff);
+    color: #fff;
+}
+
+/** added a very dark shade of red, almost black to the legend of the form **/
+legend {
+    color: #200;
+    font-weight: bold;
+    text-transform: uppercase;
+}

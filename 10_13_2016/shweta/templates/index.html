@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Shweta Day 5 Assignment</title>
+        <style></style>
+        <script></script>
+        <link rel="stylesheet" href="../styles/style.css">
+        <base href="/home">
+        <meta name="viewport" content="width=device-width" initial-scale="1"/>
+        <meta name="description" content="This is my 4th html assignment page including all the head tags"/>
+        <meta name="keywords" content="head tags, html, form"/>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <article>
+            <!-- removed the header content since using the legend tag which serves as the form heading, but leaving the header tag in order to maintain the tirinity lay out in the html document -->
+            <header></header>
+            <section>
+                <form name="employeeForm">
+                    <!-- adding the fieldset tag to the form in order for the legend tag to be used and the form's heading to be paced there -->
+                    <fieldset>
+                        <!-- legend tag works as a placeholder for the form heading, that way there's no need to use any other heading for the form and it's attached to the form -->
+                        <legend>Employee form below:</legend>
+                        <label for="fullName">Name:</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Please Enter your full Name here"/>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Please Enter your Phone Number here"/>
+                        <label for="ageGroup">Are you between 18 and 40 years of Age</label>
+                        <input type="checkbox" id="ageGroup" name="ageGroup">
+                        <!-- adding an id to the label containing the information for the following radio input fields in order add some space above this tag using the external style sheet -->
+                        <label id="radioMainLabel">Please make a selection below:</label>
+                            <label for="fullTime">Full Time</label>
+                            <input type="radio" id="fullTime" name="employmentType" value="fullTimeEmployment">
+                            <label for="partTime">Part Time</label>
+                            <input type="radio" id="partTime" name="employmentType" value="partTimeEmployment">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <button type="submit" id="submit" >Submit</button>
+                        <button type="reset" id="reset">Cancel</button>
+                    </fieldset>
+                </form>
+            </section>
+            <!-- removed the footer content but leaving the tag in order to maintain the tirinity lay out in the html document -->
+            <footer></footer>
+        </article>
+    </body>
+</html>
