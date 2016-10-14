@@ -21,22 +21,29 @@
                     <fieldset>
                         <!-- legend tag works as a placeholder for the form heading, that way there's no need to use any other heading for the form and it's attached to the form -->
                         <legend>Employee form below:</legend>
+                        <!-- first label and input for name below -->
                         <label for="fullName">Name:</label>
                         <input type="text" id="fullName" name="fullName" placeholder="Please Enter your full Name here"/>
-                        <label for="password">Password</label>
+                        <!-- second label and input for password field below-->
+                        <label for="password">Password:</label>
                         <input type="password" id="password" name="password">
+                        <!-- third label and input below-->
                         <label for="phoneNumber">Phone Number:</label>
                         <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Please Enter your Phone Number here"/>
-                        <label for="ageGroup">Are you between 18 and 40 years of Age</label>
+                        <!-- label and input for checkbox below -->
+                        <label for="ageGroup">Are you between 18 and 40 years of Age:</label>
                         <input type="checkbox" id="ageGroup" name="ageGroup">
+                        <!-- main label for radio field below -->
                         <!-- adding an id to the label containing the information for the following radio input fields in order add some space above this tag using the external style sheet -->
-                        <label id="radioMainLabel">Please make a selection below:</label>
-                            <label for="fullTime">Full Time</label>
+                        <label id="radioMainLabel">Please make a selection below-</label>
+                            <label for="fullTime">Full Time:</label>
                             <input type="radio" id="fullTime" name="employmentType" value="fullTimeEmployment">
-                            <label for="partTime">Part Time</label>
+                            <label for="partTime">Part Time:</label>
                             <input type="radio" id="partTime" name="employmentType" value="partTimeEmployment">
+                        <!-- label and input for email field -->
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email">
+                        <!-- submit and cancel buttons -->
                         <button type="submit" id="submit" >Submit</button>
                         <button type="reset" id="reset">Cancel</button>
                     </fieldset>
