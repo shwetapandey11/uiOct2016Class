@@ -89,6 +89,7 @@ button[type="reset"] span {
 ul {
     padding: 0px;
     width: 100%;
+    list-style-type: none;
 }
 
 ul li {
