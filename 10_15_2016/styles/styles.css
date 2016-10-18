@@ -1,0 +1,123 @@
+/*Removing browsers inbuilt margin and paddings*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/** adding basic font styles to the document **/
+body {
+    font-family: Helvetica;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+section {
+    width: 25%;
+    min-width: 200px;
+    margin: 0 auto;
+}
+
+/** adding some very basic styles to the form **/
+form {
+    border: 2px solid #b3b5b7;
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 2px;
+    background-color: #f9fafc;
+}
+
+input[type="text"] {
+    width: 150px;
+}
+
+/** changing the default display property of the label and input fields to block in order for them to take up the whole width of the document and not sit next to each other, which in turn brings the input field below the labels, as required by the assignment **/
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/** In order to make the 2 radio buttons and the informational heading for it to look like a group, creating extra space on top and making the text slighlty different than the others  **/
+label[for="gender"] {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+label[for="female"] {
+    margin-left: 10px;
+}
+
+label[for="male"], 
+label[for="female"],
+label[for="seniorCitizen"], 
+input[type="checkbox"], 
+input[type="radio"] {
+    display: inline;
+}
+
+/** giving styles to the buttons which are the submit and cancel buttons to make them look more appealing **/
+button {
+    margin-top: 15px;
+    height: 30px;
+    width: 30%;
+}
+
+/** adding bluish-white radial gradient to the submit button **/
+button[type="submit"] {
+    margin-left: 10px;
+}
+
+button[type="submit"] span {
+    margin-left: 5px;
+}
+
+button[type="submit"]:active {
+    color: #fff;
+}
+
+/** giving a radial gradient to the reset i.e. the cancel button **/
+button[type="reset"]:active {
+    color: #bf0118;
+    background-color: #fff;
+}
+
+button[type="reset"] span {
+    margin-right: 5px;
+}
+
+ul {
+    padding: 0px;
+    width: 100%;
+}
+
+ul li {
+    border: 2px solid #b3b5b7;
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    padding: 5px;
+    background-color: #000;
+    border-bottom: 0;
+    margin-bottom: -2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+li:first-of-type {
+    background-color: #f9fafc;
+    color: #5c5d5e;
+}
+
+ul li:hover {
+    color: #fff;
+    background-color: #898b8e;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
