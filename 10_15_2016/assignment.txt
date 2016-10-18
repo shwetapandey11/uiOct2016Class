@@ -1,0 +1,8 @@
+1. grab the latest code. inside 10_15_2016 folder, create two folders: template and styles. Place the html in templates and css in styles
+    name the html as home.tpl.html and styles as styles.css
+2. grab the form from the class and make use of box model to add spaces between input fields but you are not allowed to use ids and classes
+3. place the form in the center of the page do google on how to put it in the center. (center means by width)
+4. i want to see an unordered list inside html and find out a way to hide the (.) and place the list items right next to each other in horizontal way
+   *follow box model for spacing between the items
+5. make the buttons beautiful
+    * take github.com website as the example for button. Look for Clone button
