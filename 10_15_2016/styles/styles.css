@@ -29,6 +29,7 @@ form {
 
 input[type="text"] {
     width: 150px;
+    margin-top: 1px;
 }
 
 /** changing the default display property of the label and input fields to block in order for them to take up the whole width of the document and not sit next to each other, which in turn brings the input field below the labels, as required by the assignment **/
@@ -72,12 +73,17 @@ button[type="submit"] span {
     margin-left: 5px;
 }
 
-button[type="submit"]:active {
+button[type="submit"]:hover {
     color: #fff;
+    background-color: #01c43c;
 }
 
-/** giving a radial gradient to the reset i.e. the cancel button **/
-button[type="reset"]:active {
+button[type="reset"] {
+    background-color: #b70b0d;
+    color: #f9f4f4;
+}
+
+button[type="reset"]:hover {
     color: #bf0118;
     background-color: #fff;
 }
