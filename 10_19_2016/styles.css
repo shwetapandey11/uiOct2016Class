@@ -46,3 +46,22 @@ input{
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
+#main-section{
+    position: relative;
+    top: 50px;
+}
+
+#nav-heading{
+    position: absolute;
+    top: 0;
+    left: 550px;
+    background: #fff;
+}
+
+#main-heading{
+    position: fixed;
+    top: 0;
+    left: 550px;
+    background: #fff;
+}
