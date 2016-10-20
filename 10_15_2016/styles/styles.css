@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 /** adding basic font styles to the document **/
@@ -28,17 +29,16 @@ form {
 }
 
 input[type="text"] {
-    width: 150px;
     margin-top: 1px;
+    border: 1px solid #898c88;
+    height: 20px;
 }
 
-/** changing the default display property of the label and input fields to block in order for them to take up the whole width of the document and not sit next to each other, which in turn brings the input field below the labels, as required by the assignment **/
 label {
     display: block;
     margin-top: 10px;
 }
 
-/** In order to make the 2 radio buttons and the informational heading for it to look like a group, creating extra space on top and making the text slighlty different than the others  **/
 label[for="gender"] {
     margin-bottom: 5px;
     text-transform: capitalize;
@@ -57,20 +57,24 @@ input[type="radio"] {
     display: inline;
 }
 
-/** giving styles to the buttons which are the submit and cancel buttons to make them look more appealing **/
 button {
     margin-top: 15px;
     height: 30px;
-    width: 30%;
+    box-sizing: content-box;
+    padding: 2px 5px;
+    border-radius: 2px;
 }
 
-/** adding bluish-white radial gradient to the submit button **/
+
 button[type="submit"] {
-    margin-left: 10px;
+    border: 1px solid #898c88;
+    box-shadow: 1px 1px 0.5px 0.5px #b4b7b2 inset;
+
 }
 
 button[type="submit"] span {
-    margin-left: 5px;
+    margin-left: 3px;
+
 }
 
 button[type="submit"]:hover {
@@ -81,6 +85,8 @@ button[type="submit"]:hover {
 button[type="reset"] {
     background-color: #b70b0d;
     color: #f9f4f4;
+    border: 1px solid #600109;
+    box-shadow: 1px 1px 0.5px 0.5px #770112 inset;
 }
 
 button[type="reset"]:hover {
@@ -89,7 +95,7 @@ button[type="reset"]:hover {
 }
 
 button[type="reset"] span {
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 ul {
@@ -109,6 +115,8 @@ ul li {
     margin-bottom: -2px;
     text-transform: uppercase;
     font-weight: bold;
+    width: 120px;
+    text-align: center;
 }
 
 li:first-of-type {
