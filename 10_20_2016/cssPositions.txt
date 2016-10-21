@@ -1,0 +1,21 @@
+in css, we have certain styles to break off from the document flow (parent-child flow).
+
+1. float - it breaks off from the document flow and puts the element either left or in right. it does not support vertical break offs
+
+float: left
+float: right
+float: none
+
+
+2. position - it too breaks off from the main document flow but, it maintains its own document flow:
+there are several options for position:
+
+	i. relative - this is equivalent to saying that no position is needed
+	ii. fixed - this fixes the element at that position regardless of document flow
+	iii. absolute - this breaks off from the document flow and can be placed both vertically and horizontally using:
+
+	a. top
+	b. bottom
+
+	c. left
+	d. right
