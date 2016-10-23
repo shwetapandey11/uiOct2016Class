@@ -1,0 +1,172 @@
+body{
+    background-color: #fff;
+}
+
+#nav-heading, #main-footer{
+    position: fixed;
+    background-color: #c4d7ff;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#nav-heading{
+    top: 0;
+    border-bottom: 1px solid #ccccb9;
+}
+
+#main-footer{
+    height: 35px;
+    bottom: 0;
+    border-top: 1px solid #ccccb9;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#nav-heading > nav,
+#main-footer > nav{
+    left: 30%;
+    position: relative;
+}
+
+#main-footer > nav{
+    top: -16px;
+}
+
+#nav-heading > nav > ul,
+#main-footer > nav > ul{
+    list-type: none;
+}
+
+#nav-heading > nav > ul li,
+#main-footer > nav > ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+#main-footer > nav > ul li{
+    padding: 10px 15px;
+}
+
+#nav-heading > nav > ul li:hover,
+#main-footer > nav > ul li:hover{
+    background-color: #f7f7f4;
+    cursor: pointer;
+}
+
+#nav-heading > nav > ul li a,
+#main-footer > nav > ul li a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav-heading > nav > ul li:hover > a,
+#main-footer > nav > ul li:hover > a{
+    color: #00dbdb;
+    text-decoration: underline;
+}
+
+#nav-heading + section{
+    position: absolute;
+    right: 25%;
+    margin: 120px 0;
+}
+
+#main-heading{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+#nav-heading + section > form{
+    border: 1px solid #ccccb9;
+    padding: 40px;
+    position: relative;
+}
+
+/*#nav-heading + section > form > h4*/
+form[name="newLicenseForm"] > h4{
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    background-color: #fff;
+    padding: 0 15px;
+}
+
+form[name="newLicenseForm"] div{
+    position: relative;
+    padding: 20px 0;
+}
+
+input[type="text"],
+input[type="text"]:focus,
+input[type="text"]:hover{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccccb9;
+    outline: none;
+    width: 220px;
+    padding: 0 5px;
+}
+
+input + label{
+    position: absolute;
+    top: 27px;
+    left: 5px;
+    cursor: auto;
+    transition: all 0.3s linear;
+    color: #ccccb9;
+}
+
+input:focus + label,
+input:valid + label{
+    top: 0;
+    font-size:13px;
+    color: #000;
+}
+
+input[id="male"] + label{
+    position: relative;
+    top: 0;
+}
+
+#gender{
+    border: none;
+    padding: 0;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccccb9;
+    cursor: pointer;
+}
+
+button[type="submit"]{
+    background-color: #c4d7ff;
+}
+
+button[type="submit"]:hover{
+    background-color: #fbdf6b;
+}
+
+button[type="reset"]{
+    background-color: #fc1c29;
+}
+
+button[type="reset"]:hover{
+    background-color: #6dfc4f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
