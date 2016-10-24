@@ -1,0 +1,188 @@
+/* Removing unwanted browser induced styles */
+* {
+	margin: 0;
+	padding: 0;  
+	font-family: Helvetica;
+	font-weight: 100;
+}
+
+body {
+    font-size: 14px;
+    width: 500px;
+    margin: 0 auto;
+    min-height: 850px;
+
+}
+
+body > article {
+}
+
+body > article {
+	background-color: #f1f6fa;
+}
+
+body > article > header {
+	top:0px;
+	height: 110px;
+}
+
+body > article > header,
+body > article > footer {
+	color: #fff;
+	text-align: center;
+	width: 500px;
+	padding:20px;
+	box-sizing: border-box;
+	background-color: #6c81e6;
+	text-transform: capitalize;
+	z-index: 1;
+	border: 1px solid #000;
+	position: fixed;	
+}
+
+section > article > header {
+	background-color: #000;
+	text-align: center;
+	height: 50px;
+	position: fixed;
+	top: 110px;
+	width: 500px;
+	background-color: #f6a21d;
+	z-index: 1
+}
+
+body > article > footer {
+	bottom: 0px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 10px auto;
+}
+
+li {
+	display: inline-block;
+	padding: 5px;
+}
+
+li a {
+	text-decoration: none;
+	text-align: center;
+}
+
+ul li a {
+	color: #fff;
+	font-size: 16px;
+	padding: 10px;
+}
+
+section > form[name="newLicenseForm"] {
+	position: relative;
+	top: 165px;
+}
+
+form[name="newLicenseForm"] {
+	padding: 20px;
+}
+
+form[name="newLicenseForm"] ~ div,
+form[name="newLicenseForm"] ~ p {
+	position: relative;
+	top: 150px;
+	padding: 10px;
+	border-bottom: 2px solid #f4edf9;
+	background-color: #faf3fe;
+	text-align: center;
+	text-transform: capitalize;
+	color: #274f70;
+}
+
+p + div {
+	background-color: #a7d2f6;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+h1 + nav {
+	line-height: 36px;
+}
+
+h1 + nav > ul > li {
+	background-color: #fff;
+}
+
+h1 + nav > ul > li > a {
+	color: #000;
+}
+
+input:nth-child(1) {
+	height: 22px;
+	width: 180px;
+}
+
+label:nth-child(2) {
+	padding-left:10px;
+	font-size: 12px;			
+}
+
+/* adding margin  */
+input:nth-child(2) {
+	margin-right: 20px;
+}
+
+/* removign the border around the radio buttons */
+fieldset {
+	border: none;
+}
+
+/* targeting radio buttons, to add space between the two radio inputs */
+label:first-child {
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 100px;
+	color: #fff;
+}
+
+button[type="submit"] {
+	background-color: #029fe8;
+}
+
+button[type="submit"]:hover {
+	background-color: #eaed34;
+	border: 3px solid #000;
+	color: #000;
+}
+
+button[type="reset"] {
+	background-color: #af051e;
+}
+
+button[type="reset"]:hover {
+	background-color: #53ed34;
+	color: #000;
+	border: 3px solid #000;
+}
+
+/* "+" selects the immediate sibling, not siblings, so targeting the only div in the document that follows a p(siblings), and then accessing its child p */
+p + div > p {
+	color: #fff;
+	background-color: #bc1441;
+	padding: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
