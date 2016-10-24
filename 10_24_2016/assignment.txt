@@ -1,0 +1,7 @@
+1. grab the latest code. inside 10_20_2016 folder and name the html and css file with your name.
+    ** MAINTAIN THE INDENTATION!!!!!!
+2. grab the form from the class and applies some styles to the form, the ul and the div at the bottom WITHOUT USING IDs, CLASSES.
+These styles must include, + > ~ :
+3. apply a variant of blue (goto 0to255.com and select some nice light blue color of your choosing) and apply that to submit button. On hover, it should change the color to yellow variant also, should change the border thickness
+4. follow the same for cancel but apply red variant on normal state and light green for hover state.
+5. place the "main-heading" and "main-footer" at the top and bottom respectively and they stay there. Both of these must have some nav links.
