@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!--head of the web page-->
+    <head>
+        <!--title - this is the title of this html file-->
+        <title>DMV New License Form</title>
+
+        <!--this is external style-->
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+
+    <!--body of the web page-->
+    <!--body is the rendering part of the html-->
+    <!--this is inline/attribute style-->
+    <body>
+
+        <!--main article for forms-->
+        <article>
+
+            <!--page header-->
+            <header id="main-heading">
+                <h1>DMV New License Permit</h1>
+            </header>
+
+            <!--main body of the page-->
+            <section id="main-section">
+                <article>
+                    <header id="nav-heading">
+                        <!--page naviagation-->
+                        <nav>
+                            <img src="DMV-logo.jpg" width="100" height="100" style="position: absolute;top:-15px;"/>
+                            <!--main nav-->
+                            <ul>
+                                <!--back arrow-->
+                                <li class="backArrow">
+                                    <a href="https://www.google.com/maps"></a>
+                                </li>
+
+                                <!--home button-->
+                                <!--<li class="homeBtn">
+                                    <a href="https://www.google.com/maps"></a>
+                                </li>-->
+
+                                <li>
+                                    <a href="https://www.google.com/maps">Maps</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/mail">Mail</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/images">Images</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/shopping">Shopping</a>
+                                </li>
+                                <li>
+                                    <a href="srikar.html">Open Srikar</a>
+                                </li>
+
+                                <!--forward arrow-->
+                                <li class="forwardArrow">
+                                    <a href="https://www.google.com/maps"></a>
+                                </li>
+                            </ul>
+
+
+                        </nav>
+                    </header>
+                    <section>
+                        <!--form for new license in dmv-->
+                        <form name="newLicenseForm">
+
+                            <h4>New License Permit Form</h4>
+
+                            <!--First Name-->
+                            <div>
+                                <input type="text" id="firstName" name="fName" disabled/>
+                                <label for="firstName">Enter your First Name</label>
+                            </div>
+                            <br />
+
+                            <!--Last Name-->
+                            <div>
+                                <input type="text" id="lastName" name="lName" required/>
+                                <label for="lastName">Enter your Last Name</label>
+                            </div>
+                            <br />
+
+                            <!--email-->
+                            <div>
+                                <input type="email" id="email" name="email" required/>
+                                <label for="email">Enter your Email</label>
+
+                                <!--for validation-->
+                                <label for="email" id="requiredEmail">Email is required</label>
+                                <label for="email" id="invalidEmail">Invalid Email added</label>
+                            </div>
+                            <br />
+
+                            <!--Phone Number-->
+                            <div>
+                                <input type="text" id="phoneNumber" name="phoneNumber" required/>
+                                <label for="phoneNumber">Enter your Phone Number</label>
+                            </div>
+                            <br />
+
+                            <!--Gender-->
+                            <div>
+                                <label for="gender">Applicant's Gender:</label>
+                                <fieldset id="gender">
+                                    <!--male-->
+                                    <label for="male">Male:</label>
+                                    <input type="radio" id="male" name="gender" value="Male"/>
+
+                                    <!--female-->
+                                    <label for="female">Female:</label>
+                                    <input type="radio" id="female" name="gender" value="Female"/>
+                                </fieldset>
+                            </div>
+                            <br />
+
+                            <!--senior citizen-->
+                            <div class="container">
+                                <label for="seniorCitizen">Is applicant a senior citizen?</label>
+                                <input type="checkbox" id="seniorCitizen" name="seniorCitizen" data-srikar="viswa"/>
+                            </div>
+
+                            <!--submit button-->
+                            <button type="submit" id="submit">
+                                <span>Submit</span>
+                            </button>
+                            <!--reset/cancel-->
+                            <button type="reset" id="reset">
+                                <span>Cancel</span>
+                            </button>
+                        </form>
+                    </section>
+                    <footer></footer>
+                </article>
+            </section>
+            <!--footer of the page-->
+            <footer id="main-footer">
+                <!--footer navigation-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/disclaimer">Disclaimer</a>
+                        </li>
+                        <li>
+                            <a href="/email">Email US</a>
+                        </li>
+                        <li>
+                            <a href="/download">Download Form</a>
+                        </li>
+                        <li>
+                            <a href="/emergency">Emergency</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </article>
+    </body>
+</html>
