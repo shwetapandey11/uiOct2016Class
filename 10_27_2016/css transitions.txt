@@ -1,0 +1,64 @@
+with 2D and 3D transforms, we can only move, rotate, scale and stretch the element. But if we want to animate certain style properties like width, height, opacity, margin, border, etc. we use CSS TRANSITIONS!
+
+
+CSS transitions:
+we add these styles to the element style body, not in the states!
+
+-wekbit-transition: <style property> <timing> <animation-timing-type>
+-moz-transition: <style property> <timing> <animation-timing-type>
+-o-transition: <style property> <timing> <animation-timing-type>
+-ms-transition: <style property> <timing> <animation-timing-type>
+transition: <style property> <timing> <animation-timing-type>
+
+**<timing> is in seconds (s) or in milliseconds (ms)
+
+
+There are several types of animations:
+
+linear -> this is a straight line animation no easing
+syntax: linear
+
+
+ease -> this allows us to perform a slow start or slow end. we have four options here: ease, ease-in, ease-out, ease-in-out
+
+
+cubic bezier -> this gives us the flexibility of defining our own graphical animation graph. this has two points within which we define our animation style.
+
+syntax:
+cubic-bezier(<x-coordinate of the first point>,<y-coordinate of the first point>,<x-coordinate of the second point>,<y-coordinate of the second point>)
+
+***coordinate values range from 0 - 1
+
+
+
+
+transition delay:
+we use these to wait for certain and then apply our animation.
+syntax:
+
+-webkit-transition-delay: 2s;
+-moz-transition-delay: 2s;
+-o-transition-delay: 2s;
+-ms-transition-delay: 2s;
+transition-delay: 2s;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
