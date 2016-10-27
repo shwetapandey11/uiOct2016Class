@@ -263,11 +263,17 @@ input[type="email"]:invalid + label{
 }
 
 .animate-transition{
-    -webkit-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
+    /*-webkit-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
     -moz-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
     -o-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
     -ms-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
-    transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
+    transition: all 0.5s cubic-bezier(.56,.23,.72,.77);*/
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     -webkit-transition-delay: 2s;
     -moz-transition-delay: 2s;
