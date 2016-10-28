@@ -1,0 +1,23 @@
+css sprites:
+
+if we have more than one icon then, we can merge all of these icons into one single image file. In css, we can use background url, background position, background repeat, background size to pick one icon from the image and put it where needed. This concept is what we call css sprites or image sprites.
+During this process, the html will load only one image instead single icons. This increases the performance as it has to load only once.
+
+
+.backArrow,.homeBtn,.forwardArrow{
+    background: url('img_navsprites.gif');
+    background-size: 318%;
+    background-position: -3px -1px;
+    
+    width: 5px;
+    height: 5px;
+    
+    position: relative;
+    top: 10px;
+}
+
+
+
+**********
+display:none wont even render the element. It simply removes the element from the document flow.
+visibility:hidden (or opacity:0) makes the element invisible but keeps the dimensions intact. Meaning, there will be white space in the browser for that element location.  

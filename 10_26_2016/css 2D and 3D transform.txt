@@ -1,0 +1,121 @@
+animations in CSS:
+
+
+internet explorer (IE)
+opera
+firefox
+chrome
+safari
+
+
+
+there are four major "web engines" (browser engines). These engines are basically the brains behind the browser.
+
+1. webkit    -   webkit     (codename: -webkit)
+2. mozilla   -   mozilla    (codename: -moz) 
+3. opera     -   opera      (codename: -o)
+4. IE        -   microsoft  (codename: -ms) 
+
+
+
+Safari and Chrome follow -webkit engine
+firefox follow -moz engine
+opera follow -o engine
+IE follow -ms engine
+
+
+border-color: red;
+
+
+animations behave differently in different web engines. so we need to specify engine specific animations styles
+
+
+There are two types of animations:
+
+1. 2D
+2. 3D
+
+
+2D transform:
+we can perform the following actions:
+
+1. translate (moving the element in x-axis or y-axis)
+syntax: transform: translate(x-axis px, y-axis px);
+
+
+
+2. rotate (rotating in clockwise or counter clockwise direction)
+syntax: transform: rotate(+/- deg);
++ -> clockwise direction
+- -> counter clockwise direction
+
+
+3. scale (increase or decrease the size of the element)
+syntax: transform: scale(x-axis, y-axis);
+
+
+4. skew (stretching the element in x-axis or y-axis)
+syntax: transform: skew(+/- x-axis deg,+/- y-axis deg)
++ -> clockwise
+- -> counter clockwise
+
+5. matrix (if we combine all the above, we use matrix)
+syntax: transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+
+
+
+
+
+3D transform:
+same actions like 2D transform apply here but we can specify which axis to use:
+
+1. translateX, translateY, translateZ
+2. rotateX, rotateY, rotateZ
+3. scaleX, scaleY, scaleZ
+
+translate3d(x,y,z)
+
+
+rotate3d(x,y,z,deg)
+if i want to rotate in x then, rotate3d(0,1,0,60deg);
+
+scale3d(x,y,z)
+matrix3d(scaleX,scaleY,scaleZ,rotateX,rotateY,rotateZ,translateX,translateY,translateZ)
+
+
+**skew in z-axis is not possible. we might not even see the element even for 0.1deg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

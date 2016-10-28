@@ -1,0 +1,311 @@
+body{
+    background-color: #fff;
+    /*background: url('smaller.jpg');
+    background-repeat: no-repeat;
+    background-size: 305%;*/
+}
+
+#nav-heading, #main-footer{
+    position: fixed;
+    background-color: #c4d7ff;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#nav-heading{
+    top: 0;
+    border-bottom: 1px solid #ccccb9;
+}
+
+#main-footer{
+    height: 35px;
+    bottom: 0;
+    border-top: 1px solid #ccccb9;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#nav-heading > nav{
+    left: 25%;
+    position: relative;
+}
+
+#main-footer > nav{
+    left: 30%;
+    position: relative;
+}
+
+#main-footer > nav{
+    top: -16px;
+}
+
+#nav-heading > nav > ul,
+#main-footer > nav > ul{
+    list-type: none;
+}
+
+#nav-heading > nav > ul li,
+#main-footer > nav > ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+#main-footer > nav > ul li{
+    padding: 10px 15px;
+}
+
+#nav-heading > nav > ul li:hover,
+#main-footer > nav > ul li:hover{
+    background-color: #f7f7f4;
+    cursor: pointer;
+}
+
+#nav-heading > nav > ul li a,
+#main-footer > nav > ul li a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav-heading > nav > ul li:hover > a,
+#main-footer > nav > ul li:hover > a{
+    color: #00dbdb;
+    text-decoration: underline;
+}
+
+#nav-heading + section{
+    position: absolute;
+    right: 25%;
+    margin: 120px 0;
+}
+
+#main-heading{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+#main-heading:hover{
+    /*animate in 2D and translate down 50px*/
+    /*
+    -webkit-transform: translate3d(0, 50px, 30px); *//*Chrome or safari specific transform*//*
+    -moz-transform: translate3d(0, 50px, 30px); *//*firefox specific transform*//*
+    -o-transform: translate3d(0, 50px, 30px); *//*opera specific transform*//*
+    -ms-transform: translate3d(0, 50px, 30px); *//*IE specific transform*//*
+    transform: translate3d(0, 50px, 30px); *//*fallback*//*
+    */
+
+
+    -webkit-transform: rotate3d(0,0,1,90deg); /*Chrome or safari specific transform*/
+    -moz-transform: rotate3d(0,0,1,90deg); /*firefox specific transform*/
+    -o-transform: rotate3d(0,0,1,90deg); /*opera specific transform*/
+    -ms-transform: rotate3d(0,0,1,90deg); /*IE specific transform*/
+    transform: rotate3d(0,0,1,90deg); /*fallback*/
+
+
+    /*
+    -webkit-transform: scale(4,1); *//*Chrome or safari specific transform*//*
+    -moz-transform: scale(4,1); *//*firefox specific transform*//*
+    -o-transform: scale(4,1); *//*opera specific transform*//*
+    -ms-transform: scale(4,1); *//*IE specific transform*//*
+    transform: scale(4,1); *//*fallback*//*
+    */
+
+    /*
+    -webkit-transform: skew(10deg,-40deg); *//*Chrome or safari specific transform*//*
+    -moz-transform: skew(10deg,-40deg); *//*firefox specific transform*//*
+    -o-transform: skew(10deg,-40deg); *//*opera specific transform*//*
+    -ms-transform: skew(10deg,-40deg); *//*IE specific transform*//*
+    transform: skew(10deg,-40deg); *//*fallback*//*
+    */
+}
+
+#nav-heading + section > form{
+    border: 1px solid #ccccb9;
+    padding: 40px;
+    position: relative;
+}
+
+/*#nav-heading + section > form > h4*/
+form[name="newLicenseForm"]{
+    /*background: url('smaller.jpg');
+    background-repeat: no-repeat;
+    background-size: 305%;*/
+    background-color: #fff;
+}
+
+form[name="newLicenseForm"] > h4{
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    background-color: #fff;
+    padding: 0 15px;
+}
+
+form[name="newLicenseForm"] div{
+    position: relative;
+    padding: 20px 0;
+}
+
+input[type="text"],
+input[type="text"]:focus,
+input[type="text"]:hover,
+input[type="email"],
+input[type="email"]:focus,
+input[type="email"]:hover{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccccb9;
+    outline: none;
+    width: 220px;
+    padding: 0 5px;
+}
+
+input + label{
+    position: absolute;
+    top: 27px;
+    left: 5px;
+    cursor: auto;
+    transition: all 0.3s linear;
+    color: #ccccb9;
+}
+
+input:focus + label,
+input:valid + label{
+    top: 0;
+    font-size:13px;
+    color: #000;
+}
+
+input[id="male"] + label{
+    position: relative;
+    top: 0;
+}
+
+#gender{
+    border: none;
+    padding: 0;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccccb9;
+    cursor: pointer;
+}
+
+button[type="submit"]{
+    background-color: #c4d7ff;
+}
+
+button[type="submit"]:hover{
+    background-color: #fbdf6b;
+}
+
+button[type="reset"]{
+    background-color: #fc1c29;
+}
+
+button[type="reset"]:hover{
+    background-color: #6dfc4f;
+}
+
+input[name="fName"]:disabled{
+    /*White color*/
+    /*background-color: rgba(255,255,255,1);*/
+    background-color: rgba(0,0,0,1);
+}
+/*input[type="checkbox"]::before{
+    display: none;
+}
+
+input[type="checkbox"]::after{
+    content: 'Yes';
+}*/
+
+#requiredEmail{
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    color: #ff0000;
+}
+
+#invalidEmail{
+    position: absolute;
+    bottom: -15px;
+    left: 5px;
+    color: #ff0000;
+}
+
+input[type="email"]:valid,
+input[type="email"]:valid{
+    border: 1px solid #00ff00;
+}
+
+input[type="email"]:invalid,
+input[type="email"]:invalid{
+    border: 1px solid #ff0000;
+}
+
+input[type="email"]:valid ~ #requiredEmail,
+input[type="email"]:valid ~ #invalidEmail{
+    display: none;
+}
+
+input[type="email"]:invalid ~ #requiredEmail,
+input[type="email"]:invalid ~ #invalidEmail{
+    display: inline-block;
+}
+
+input[type="email"]:invalid + label{
+    top: 0;
+    color: #000;
+    font-size: 13px;
+}
+
+.backArrow,.homeBtn,.forwardArrow{
+    background: url('img_navsprites.gif');
+    width: 5px;
+    height: 5px;
+    background-size: 318%;
+    position: relative;
+    top: 10px;
+}
+
+.backArrow{
+    /*background-position: x-coordinate y-coordinate*/
+    background-position: -51px 1px;
+    left: -15%;
+}
+
+.homeBtn{
+    /*background-position: x-coordinate y-coordinate*/
+    background-position: -3px -1px;
+    left: -5%;
+}
+
+.forwardArrow{
+    /*background-position: x-coordinate y-coordinate*/
+    background-position: -98px 0;
+    right: -15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
