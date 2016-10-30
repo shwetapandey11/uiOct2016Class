@@ -1,0 +1,214 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, Arial;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+
+body {
+	background: url('../images/earth_pixalated.jpg') repeat left top;
+}
+
+#topLevelArticle > header { 
+}
+
+#topHeading {
+	position: relative;
+	height: 80px;
+	background-color: #000;
+	line-height: 80px;
+}
+
+.headingText {
+	position: relative;
+	text-align: right;
+	padding-right: 20px;
+	font-weight: 100;
+	color:#fff;
+}
+
+ #topNav {
+	background-color: #510101;
+	padding: 10px;
+}
+
+nav ul {
+	text-align: right;
+	margin-right: 50px;
+	height: 22px;
+	line-height: 1px;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 10px;
+}
+
+form[name="myForm"] {
+    max-width: 600px;
+    min-width: 500px;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    min-height: 370px;
+}
+
+form[name="myForm"] > ul > h2 {
+	text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+form ul {
+	list-style: none;
+}
+
+form ul li {
+	display: block;
+	margin-bottom: 10px;
+    min-height: 35px;
+}
+
+form label {
+	line-height: 24px;
+	font-size: 14px;
+}
+
+form[name="myForm"] input {
+	width: 100%;
+	height: 24px;
+    display: block;
+    text-transform: uppercase;
+	letter-spacing: 1.5px;	
+}
+
+form[name="myForm"] input a {
+	font-weight: 300px;
+}
+
+select {
+	width: 50%;
+	height: 24px;
+	display: block;
+}
+
+a {
+	color: #fff;
+}
+
+li#firstname, 
+li#password1 {
+	float: left;
+	padding-right: 10px;
+}
+
+li#lastname,
+li#password2 {
+	float: right;
+}
+
+li#firstname,
+li#password1,
+li#lastname,
+li#password2 {
+	width: 48%;
+	border-radius: 5px;
+}
+
+div#emailDiv::before {
+	clear: both;
+	height: 2px;
+	content: " ";
+	display: block;
+}
+
+div#button {
+	margin-top: 30px;
+	text-align: center;
+	box-sizing: border-box;
+	height: 40px;
+}
+
+div#button > button{	
+	height: 40px;
+	width: 80px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+button[type="submit"] {
+	background-color: #029fe8;
+	margin-right: 10px;
+}
+
+button[type="submit"]:hover {
+	color: #000;
+}
+
+button[type="reset"] {
+	background-color: #af051e;
+}
+
+button[type="reset"]:hover {
+	color: #000;
+}
+
+#group3 {
+	height: 80px;
+	margin-top: 160px;
+	width: 100%;
+}
+
+#group3 > #file-up {
+	float: left;
+    width: 49%;
+    border: 1px solid #ccc;
+    padding-top: 6px;
+    padding-left: 5px;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+#group3 > #age-group {
+	float: right;
+    width: 48%;
+    height: 80px;
+    padding-top: 6px;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#age-group::after {
+	height: 1px;
+	visibility: hidden;
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
