@@ -61,7 +61,7 @@ form[name="myForm"] {
     min-height: 370px;
 }
 
-form[name="myForm"] > ul > h2 {
+form[name="myForm"] > h2 {
 	text-align: center;
     font-weight: 100;
     margin-bottom: 10px;
@@ -104,21 +104,21 @@ a {
 	color: #fff;
 }
 
-li#firstname, 
-li#password1 {
+div#firstname, 
+div#password1 {
 	float: left;
 	padding-right: 10px;
 }
 
-li#lastname,
-li#password2 {
+div#lastname,
+div#password2 {
 	float: right;
 }
 
-li#firstname,
-li#password1,
-li#lastname,
-li#password2 {
+div#firstname,
+div#password1,
+div#lastname,
+div#password2 {
 	width: 48%;
 	border-radius: 5px;
 }
@@ -130,14 +130,14 @@ div#emailDiv::before {
 	display: block;
 }
 
-div#button {
+li#button {
 	margin-top: 30px;
 	text-align: center;
 	box-sizing: border-box;
 	height: 40px;
 }
 
-div#button > button{	
+li#button > button{	
 	height: 40px;
 	width: 80px;
 	border-radius: 5px;
@@ -163,7 +163,7 @@ button[type="reset"]:hover {
 
 #group3 {
 	height: 80px;
-	margin-top: 160px;
+	margin-top: 50px;
 	width: 100%;
 }
 
