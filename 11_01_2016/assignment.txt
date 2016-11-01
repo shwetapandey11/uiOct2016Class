@@ -1,0 +1,11 @@
+1. get the latest code. and inside 10_28_2016, create a folder under your name
+2. create a new html with a new form with whatever fields you like.
+3. create two css files: styles.css and animation.css. styles.css should have the static styles. animation.css should only
+contain animation specific styles
+4. your example must have a background image. Get any image from google images
+5. MAKE SURE THAT:
+    i. SOME CONTENT IS ANIMATING
+    ii. USER IS ABLE TO READ/SEE THE CONTENT
+    iii. ALL THREE TYPES OF ANIMATION IS CAPTURED
+
+6. you are free to choose ids and classes. but keep it clean and SORT as much as possible AND WOW ME!!!!!!!
