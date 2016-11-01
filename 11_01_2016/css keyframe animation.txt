@@ -1,0 +1,23 @@
+css keyframe animation
+
+
+this defines the time frame for our animation.
+
+syntax:
+
+@keyframes <define the name of our keyframe>{
+	0% {
+
+	}
+	100% {
+
+	}
+}
+
+section{
+	animation-name: <define the name of our keyframe>;
+	animation-duration: 60s;
+	animation-iteration-count: 3;
+
+	/*animation: <define the name of the our keyframe> 60s 3;*/	
+}
