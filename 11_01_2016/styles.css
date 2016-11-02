@@ -251,100 +251,11 @@ input[type="email"]:invalid + label{
     right: -15%;
 }
 
-.animate-transition{
-    /*-webkit-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
-    -moz-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
-    -o-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
-    -ms-transition: all 0.5s cubic-bezier(.56,.23,.72,.77);
-    transition: all 0.5s cubic-bezier(.56,.23,.72,.77);*/
-
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-
-    -webkit-transition-delay: 2s;
-    -moz-transition-delay: 2s;
-    -o-transition-delay: 2s;
-    -ms-transition-delay: 2s;
-    transition-delay: 2s;
-}
-
-
-/*create a keyframe animation*/
-/*@-webkit-keyframes upAndDown {
-    0% {
-        top: 20%;
-    }
-    50% {
-        top: 50%;
-    }
-    100% {
-        top: 20%;
-    }
-}*/
-@keyframes upAndDown{
-    0%,100% {
-        opacity: 0;
-        top: 50%;
-        left: 25%;
-        font-size: 14px;
-    }
-    50% {
-        opacity: 1;
-        top: 20%;
-        left: 0;
-        font-size: 70px;
-    }
-}
-
 #main-heading{
     position: absolute;
-    /*left: 25%;
+    display: inline-block;
     top: 50%;
-    opacity: 1;*/
-    /*-webkit-animation-name: upAndDown;
-    -moz-animation-name: upAndDown;
-    -o-animation-name: upAndDown;
-    -ms-animation-name: upAndDown;
-    animation-name: upAndDown;
-
-    -webkit-animation-duration: 6s;
-    -moz-animation-duration: 6s;
-    -o-animation-duration: 6s;
-    -ms-animation-duration: 6s;
-    animation-duration: 6s;
-
-    -webkit-animation-iteration-count: 3;
-    -moz-animation-iteration-count: 3;
-    -o-animation-iteration-count: 3;
-    -ms-animation-iteration-count: 3;
-    animation-iteration-count: 3;*/
-
-    -webkit-animation: upAndDown 2s infinite;
-    -moz-animation: upAndDown 2s infinite;
-    -o-animation: upAndDown 2s infinite;
-    -ms-animation: upAndDown 2s infinite;
-    animation: upAndDown 2s infinite;
-}
-
-@keyframes scrollContent{
-    0% {
-        right: -50%;
-    }
-    100% {
-        right: 50%;
-    }
-}
-
-.scroll-content{
-    position: relative;
-    -webkit-animation: scrollContent 20s infinite;
-    -moz-animation: scrollContent 20s infinite;
-    -o-animation: scrollContent 20s infinite;
-    -ms-animation: scrollContent 20s infinite;
-    animation: scrollContent 20s infinite;
+    left: 20%;
 }
 
 

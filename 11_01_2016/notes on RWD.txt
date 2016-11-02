@@ -43,7 +43,9 @@ with of ten columns = 83.3%
 
 
 
-
+{
+	box-sizing: border-box;
+}
 
 
 
