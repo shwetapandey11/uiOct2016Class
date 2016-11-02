@@ -7,16 +7,11 @@
 body {
 	font-family: Helvetica, Arial;
 	font-size: 12px;
-	box-sizing: border-box;
 }
 
 body {
 	background: url('../images/earth_pixalated.jpg') no-repeat left top;
 	background-color: #000;
-	box-sizing: border-box;
-}
-
-#topLevelArticle > header { 
 }
 
 #topHeading {
@@ -64,8 +59,7 @@ form[name="myForm"] {
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
     padding-bottom: 50px;
-    box-sizing: border-box;
-    min-height: 370px;
+   min-height: 370px;
 }
 
 form[name="myForm"] > h2 {
@@ -140,7 +134,6 @@ div#emailDiv::before {
 li#button {
 	margin-top: 30px;
 	text-align: center;
-	box-sizing: border-box;
 	height: 40px;
 }
 
@@ -182,7 +175,6 @@ button[type="reset"]:hover {
     padding-top: 6px;
     padding-left: 5px;
     height: 80px;
-    box-sizing: border-box;
 }
 
 #group3 > #age-group {
@@ -192,7 +184,6 @@ button[type="reset"]:hover {
     padding-top: 6px;
     padding-left: 5px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
 #age-group::after {
