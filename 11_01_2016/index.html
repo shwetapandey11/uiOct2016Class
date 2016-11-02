@@ -7,11 +7,13 @@
         <!--title - this is the title of this html file-->
         <title>DMV New License Form</title>
 
-        <!--this is external style-->
-        <link href="styles.css" rel="stylesheet"/>
-
         <!--meta for responsiveness-->
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!--this is external style-->
+        <link href="styles.css" rel="stylesheet"/>
+        <link href="responsive.css" rel="stylesheet"/>
+
     </head>
 
     <!--body of the web page-->
@@ -24,7 +26,7 @@
 
             <!--page header-->
             <header id="main-heading">
-                <h1>DMV New License Permit</h1>
+                <!--<h1>DMV New License Permit</h1>-->
             </header>
 
             <!--main body of the page-->
@@ -71,74 +73,92 @@
 
                         </nav>
                     </header>
-                    <section>
-                        <!--form for new license in dmv-->
+                    <!--<section>
+                        &lt;!&ndash;form for new license in dmv&ndash;&gt;
                         <form name="newLicenseForm">
 
                             <h4>New License Permit Form</h4>
 
-                            <!--First Name-->
+                            &lt;!&ndash;First Name&ndash;&gt;
                             <div>
                                 <input type="text" id="firstName" name="fName" disabled/>
                                 <label for="firstName">Enter your First Name</label>
                             </div>
                             <br />
 
-                            <!--Last Name-->
+                            &lt;!&ndash;Last Name&ndash;&gt;
                             <div>
                                 <input type="text" id="lastName" name="lName" required/>
                                 <label for="lastName">Enter your Last Name</label>
                             </div>
                             <br />
 
-                            <!--email-->
+                            &lt;!&ndash;email&ndash;&gt;
                             <div>
                                 <input type="email" id="email" name="email" required/>
                                 <label for="email">Enter your Email</label>
 
-                                <!--for validation-->
+                                &lt;!&ndash;for validation&ndash;&gt;
                                 <label for="email" id="requiredEmail">Email is required</label>
                                 <label for="email" id="invalidEmail">Invalid Email added</label>
                             </div>
                             <br />
 
-                            <!--Phone Number-->
+                            &lt;!&ndash;Phone Number&ndash;&gt;
                             <div>
                                 <input type="text" id="phoneNumber" name="phoneNumber" required/>
                                 <label for="phoneNumber">Enter your Phone Number</label>
                             </div>
                             <br />
 
-                            <!--Gender-->
+                            &lt;!&ndash;Gender&ndash;&gt;
                             <div>
                                 <label for="gender">Applicant's Gender:</label>
                                 <fieldset id="gender">
-                                    <!--male-->
+                                    &lt;!&ndash;male&ndash;&gt;
                                     <label for="male">Male:</label>
                                     <input type="radio" id="male" name="gender" value="Male"/>
 
-                                    <!--female-->
+                                    &lt;!&ndash;female&ndash;&gt;
                                     <label for="female">Female:</label>
                                     <input type="radio" id="female" name="gender" value="Female"/>
                                 </fieldset>
                             </div>
                             <br />
 
-                            <!--senior citizen-->
+                            &lt;!&ndash;senior citizen&ndash;&gt;
                             <div class="container">
                                 <label for="seniorCitizen">Is applicant a senior citizen?</label>
                                 <input type="checkbox" id="seniorCitizen" name="seniorCitizen" data-srikar="viswa"/>
                             </div>
 
-                            <!--submit button-->
+                            &lt;!&ndash;submit button&ndash;&gt;
                             <button type="submit" id="submit">
                                 <span>Submit</span>
                             </button>
-                            <!--reset/cancel-->
+                            &lt;!&ndash;reset/cancel&ndash;&gt;
                             <button type="reset" id="reset">
                                 <span>Cancel</span>
                             </button>
                         </form>
+                    </section>-->
+
+                    <section>
+                        <!--create a row-->
+                        <!--each class row, should have 100% width (in short col-12)-->
+                        <!--so its children all together must come to col-12-->
+                        <div class="row">
+                            <div class="col-6">
+                                <p>THis is is col 9 and we are trying to make it responsive.THis is is col 9 and we are trying to make it responsive.
+                                    THis is is col 9 and we are trying to make it responsive.THis is is col 9 and we are trying to make it responsive</p>
+                            </div>
+                            <div class="col-3">
+                                <p>I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.</p>
+                            </div>
+                            <div class="col-3">
+                                <p>I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.I'm col 4 and I'll be like this.</p>
+                            </div>
+                        </div>
                     </section>
                     <footer></footer>
                 </article>
