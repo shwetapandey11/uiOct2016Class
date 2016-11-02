@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -10,7 +11,8 @@ body {
 }
 
 body {
-	background: url('../images/earth_pixalated.jpg') repeat left top;
+	background: url('../images/earth_pixalated.jpg') no-repeat left top;
+	background-color: #000;
 	box-sizing: border-box;
 }
 
@@ -27,13 +29,13 @@ body {
 
 .headingText {
 	position: absolute;
-	border: 2px solid red;
-	min-height: 50px;
+	max-height: 50px;
 	min-width: 100px;
 	text-align: right;
 	padding-right: 20px;
 	font-weight: 100;
-	color:#fff;
+	color: #fff;
+	overflow: hidden;
 }
 
  #topNav {
@@ -145,10 +147,9 @@ li#button {
 li#button > button{	
 	height: 80px;
 	width: 80px;
-	border-radius: 5px;
+	border: none;
 	color: #fff;
-	outline: 20px solid transparent;
-	box-shadow: none;
+	outline: 1px solid transparent;
 }
 
 button[type="submit"] {

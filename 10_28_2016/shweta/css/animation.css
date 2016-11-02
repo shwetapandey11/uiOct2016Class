@@ -1,14 +1,14 @@
 @keyframes move {
-	0% {background-position: 1000 0}
-	100%{background-position: 0 0}
+	0% {background-position: -1200px 0};
+	100%{background-position: 0 0};
 }
 
 body {
-	-webkit-animation: move 20s infinite alternate;
-	-moz-animation: move 20s infinite alternate;
-	-ms-animation: move 20s infinite alternate;
-	-o-animation: move 20s infinite alternate;
-	animation: move 20s infinite alternate;
+	-webkit-animation: move 20s linear infinite alternate;
+	-moz-animation: move 20s linear infinite alternate;
+	-ms-animation: move 20s linear infinite alternate;
+	-o-animation: move 20s linear infinite alternate;
+	animation: move 20s linear infinite alternate;
 }
 
 @keyframes flyin {
@@ -26,17 +26,17 @@ body {
 	80% {color: #f7ef07;}
 	
 	100% {
-		left: 85%;
+		left: 80%;
 		color: #fff;
 	}
 } 
 
 .headingText {
-	-webkit-animation: flyin 35s infinite alternate;
-	-moz-animation: flyin 35s infinite alternate;
-	-ms-animation: flyin 35s infinite alternate;
-	-o-animation: flyin 35s infinite alternate;
-	animation: flyin 35s infinite alternate;
+	-webkit-animation: flyin 35s ease-in-out infinite alternate;
+	-moz-animation: flyin 35s ease-in-out infinite alternate;
+	-ms-animation: flyin 35s ease-in-out infinite alternate;
+	-o-animation: flyin 35s ease-in-out infinite alternate;
+	animation: flyin 35s ease-in-out infinite alternate;
 }
 
 nav > ul > li:hover {
