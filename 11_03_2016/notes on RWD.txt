@@ -1,0 +1,68 @@
+desktop's lowest resoltion is 1200x968
+
+tablet's lowest resolution is 1024x768
+
+phone's lowest resolution is 320x480
+
+
+this resolution is what we call as viewport and this viewport we consider the lowest viewport values. If our screen resolution drops below 1200, it will automatically take tablet's style and so on.
+
+
+1596px -> 100% (100vw)     |   width of content = 100px; (100px of 1596px is very small)
+ 
+1024px -> 100% (100vw)     |   width of content = 100px; (100px of 1024px is somewhat standard)
+
+320px  -> 100% (100vw)	   |   width of content = 100px; (100px of 320px is bery big)
+
+
+
+
+
+
+
+we divide the entire screen into 12 equal columns, and we make our content's width match the width of these columns
+
+
+meaning, if the 3 columns together make 400px, then the width of the div that i'm placing should be 400px.
+
+width of one column = 100%/12 = 8.33%
+width of two column = 16.67%
+width of three columns = 25%
+with of ten columns = 83.3%
+
+
+
+
+1600px * 50% (6 columns) = 800px
+1024px * 50% (6 columns) = 512px
+ 320px * 50% (6 columns) = 160px
+
+
+
+
+
+
+
+{
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

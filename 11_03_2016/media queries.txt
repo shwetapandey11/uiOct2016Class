@@ -1,0 +1,24 @@
+1. Media queries
+
+these are nothing but screen or media specific styles. Meaning, if my screen size is ipad size or media is an ipad with the help of media queries, we can writes styles which will only work on ipad screen size
+
+syntax:
+
+@media only screen and (min-width: <value>) and (max-width: <value>)
+
+
+for ipad's, our assumption is max width to be 768px and min width to be 660px
+
+standard ones are:
+
+max-width, max-height, min-width, min-height, orientation, width and height
+
+
+
+
+
+2. the use of !important
+lets say we have an inline style (attribute level style). and we want to overright that style in our .css file. to do this, we use !important which says that this assigned style is very important
+
+
+to overright an inline style, we use !important

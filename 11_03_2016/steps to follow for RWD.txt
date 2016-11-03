@@ -1,0 +1,28 @@
+Steps to follow for RWD:
+
+1. set the meta tag:
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+2. Make sure that all the elements have box-sizing set to "border-box"
+3. We need to perform calculations and define our 12 columns. Create classes for each column:
+	.col-1,.col-2, etc.
+4. select all these columns and add float:left and some padding
+5. Make sure that we add the content in row basis. That is,
+	<div class="row">
+		<div class="col-6"></div>
+		<div class="col-6"></div>
+	</div>
+	<div class="row">
+		<div class="col-6"></div>
+		<div class="col-6"></div>
+	</div>
+	<div class="row">
+	    <div class="col-6"></div>
+		<div class="col-3"></div>
+		<div class="col-3"></div>
+	</div>
+6. since our column's content is float left, which breaks off from the document flow, we need to put these content back in the document flow. To do that, we say:
+	.row::after{
+		clear: both;
+		display: block;
+		content: "";
+	}
