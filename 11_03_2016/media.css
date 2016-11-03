@@ -1,0 +1,43 @@
+
+/*IPAD specific styles*/
+@media only screen and (min-width: 660px) and (max-width: 768px) and (orientation: portrait){
+    .stretch{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1024px) and (orientation: landscape){
+    .row{
+        margin: 0 auto;
+        float: none;
+        width: 575px;
+        display: block;
+    }
+}
+
+/*IPHONE specific styles*/
+@media only screen and (min-width: 200px) and (max-width: 375px) and (orientation: portrait){
+    .stretch{
+        width: 100%;
+    }
+
+    .row{
+        margin: 20px auto;
+        float: none;
+        width: 235px;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape){
+    .stretch{
+        width: 100%;
+    }
+
+    .row{
+        margin: 20px auto;
+        float: none;
+        width: 360px;
+        display: block;
+    }
+}
