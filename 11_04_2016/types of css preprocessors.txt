@@ -1,0 +1,38 @@
+CSS preprocessors:
+
+CSS preprocessors, give us the power to process our css before it gets rendered/applied. To use the preprocessors, we can perform the processing on the client-side (using javascript) or we can perform the same on the server-side (using RUBY)
+
+
+there are three css preprocessors:
+1. sass (this is server-side processor. This uses ruby to run)
+2. less (this is client-side processor. This uses javascript. to run this we need NODEJS)
+3. stylus (this is the least used processors)
+
+
+sass --watch styles.scss styles.css
+lessc styles.less styles.css
+
+
+
+.scss .less
+
+
+MODULAR APPLICATION:
+This is the concept in which we create re-usable modules which can be used anywhere in the application and any number of times.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

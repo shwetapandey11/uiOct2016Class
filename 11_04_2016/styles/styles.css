@@ -1,0 +1,22 @@
+body {
+  background-color: #fff;
+}
+.header:hover {
+  box-shadow: 0 2px 5px #333;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+.footer:hover {
+  background-color: #fff;
+}
+.border-bottom,
+.header {
+  border-bottom: 1px solid #f6f6f6;
+  box-shadow: 0 2px 5px #f6f6f6;
+}
+.light-background,
+.header {
+  background-color: #fff;
+}
