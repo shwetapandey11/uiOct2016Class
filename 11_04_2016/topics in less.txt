@@ -1,0 +1,41 @@
+Topics in LESS:
+
+1. variables: these are constant values to be used throughtout our application.
+example: @light-blue: #fbfefd;
+_____________________________________________________________________
+
+2. import: these are used to import one less file into the other.
+example: @import "variables.less";
+_____________________________________________________________________
+
+3. &: these are used to define states and to invoke itself.
+example: 
+
+.header{
+	background-color: @black;
+	&:hover{
+		background-color: @white;
+	}
+}
+** we cannot call '&' inside '&'. but, we can add multiple '&' in one single style block
+_____________________________________________________________________
+
+4. extend: this is used to extend one style into the other style. We can add multiple style blocks inside the extend function callback. This used function callbacks like "(" and ")".
+example:
+
+.header{
+	background-color: @black;
+	&:hover{
+		background-color: @white;
+	}
+	&:extend(.border, .srikar);
+}
+
+.border{
+	border-bottom: 1px solid @light-gray;
+}
+
+.srikar{
+	background-color: @light-blue;
+}
+_____________________________________________________________________

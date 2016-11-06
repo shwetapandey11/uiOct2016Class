@@ -1,0 +1,4 @@
+Symbols in less css preprocessor:
+
+@ -> this means to create a constant value. These are used for variables, import, etc.
+& -> this is used to define the states. Also, this is an indirect way of saying invoke myself. Example :hover, :focus
