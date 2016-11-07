@@ -6,3 +6,21 @@
 .light-background{
     background-color: @white;
 }
+
+.dark-background(){
+    background-color: @black;
+    color: @white;
+    &:hover{
+        background-color: @light-blue;
+    }
+}
+
+
+.animation(@prop, @secs, @type){
+	-webkit-transition: @prop @secs @type;
+	   -moz-transition: @prop @secs @type;
+	    -ms-transition: @prop @secs @type;
+	     -o-transition: @prop @secs @type;
+	        transition: @prop @secs @type;
+}
+

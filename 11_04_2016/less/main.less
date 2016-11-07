@@ -1,5 +1,7 @@
 body{
     background-color: @white;
+    font-size: 14px;
+    .ipad(660px, landscape);
 }
 
 .header{
@@ -7,12 +9,10 @@ body{
     &:hover{
         box-shadow: 0 2px 5px @dark-gray;
     }
+    .animation(all, 4s, linear);
 }
 
 .footer{
-    background-color: @dark-gray;
-    color: @white;
-    &:hover{
-        background-color: @white;
-    }
+    .dark-background();
+    .animation(all, 1s, cubic-bezier(.27,.87,.13,.44));
 }
