@@ -39,3 +39,98 @@ example:
 	background-color: @light-blue;
 }
 _____________________________________________________________________
+
+5. mixins: this is another type of extend with some key differences, namely: we can right different states using the "&" (in short we can nest "&") and secondly, the class that we need to extend is a "function".
+These functions can take input. 
+
+IN SHORT, MIXINS ARE REUSABLE FUNCTION COMPONENT WHICH TAKES ARGUEMENTS
+
+example:
+
+.border(){
+	border-bottom: 1px solid @light-gray;	
+	&:hover{
+		border-bottom: 1px solid @dark-gray;	
+	}
+	&:focus{
+		border-bottom: 1px solid @light-blue;
+	}
+}
+
+.srikar{
+	background-color: @light-blue;
+}
+
+
+.header{
+	&:extend(.srikar);
+	.border();
+}
+
+
+
+another example:
+.animation(@prop, @secs, @type){
+	-webkit-transition: @prop @secs @type;
+	   -moz-transition: @prop @secs @type;
+	    -ms-transition: @prop @secs @type;
+	     -o-transition: @prop @secs @type;
+	        transition: @prop @secs @type;
+}
+
+
+
+.header{
+	border: 1px solid @light-gray;
+	background-color: @white;
+	&:hover{
+		border: 1px solid @dark-gray;
+		background-color: @black;
+	}
+
+	.animation(border, 4s, cubic-bezier(.17,.67,.83,.67));
+}
+
+
+.footer{
+	color: @black;
+	margin: 40px;
+	&:hover{
+		color: @light-blue;
+		margin: 10px;
+	}
+
+	.animation(all, 10s, cubic-bezier(.27,.87,.13,.44));
+}
+
+_____________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

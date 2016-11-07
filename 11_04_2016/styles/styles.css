@@ -1,15 +1,33 @@
 body {
   background-color: #fff;
+  font-size: 14px;
+}
+.header {
+  -webkit-transition: all 4s linear;
+  -moz-transition: all 4s linear;
+  -ms-transition: all 4s linear;
+  -o-transition: all 4s linear;
+  transition: all 4s linear;
 }
 .header:hover {
   box-shadow: 0 2px 5px #333;
 }
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .header {
+    font-size: 10px;
+  }
+}
 .footer {
-  background-color: #333;
+  background-color: #000;
   color: #fff;
+  -webkit-transition: all 1s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  -moz-transition: all 1s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  -ms-transition: all 1s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  -o-transition: all 1s cubic-bezier(0.27, 0.87, 0.13, 0.44);
+  transition: all 1s cubic-bezier(0.27, 0.87, 0.13, 0.44);
 }
 .footer:hover {
-  background-color: #fff;
+  background-color: #fbfefd;
 }
 .border-bottom,
 .header {
