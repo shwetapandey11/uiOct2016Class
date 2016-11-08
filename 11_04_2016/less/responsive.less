@@ -1,0 +1,28 @@
+// TODO: create a responsive mixin
+// TODO: this mixin takes a values "responsive" and its default value is 1
+// TODO: we the check for condition, whether "responsive" is less than 13
+
+.responsive-mixin(@responsive) when (@responsive < 13){
+
+    // TODO: inside the mixin, we create a dynamic class and its name will change
+    // TODO: based on the "responsive" value. meaning, if "responsive" = 4 then,
+    // TODO: class name is ".col-4"
+
+
+    .col-@{responsive}{
+
+        // TODO: calculation:
+        // TODO: we first divide 12 by the "responsive" counter
+        // TODO: then, we divide 100 % with the above value.
+
+
+        width: (100% / (12/@responsive));
+    }
+
+    // TODO: increate the "responsive" value by 1 and
+    // TODO: execute the mixin again with new value
+
+
+    .responsive-mixin((@responsive+1));
+}
+

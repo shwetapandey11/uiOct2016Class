@@ -1,6 +1,20 @@
+.border-bottom,
+.header {
+  border-bottom: 1px solid #f6f6f6;
+  box-shadow: 0 2px 5px #f6f6f6;
+}
+.light-background,
+.header {
+  background-color: #fff;
+}
 body {
   background-color: #fff;
   font-size: 14px;
+}
+@media only screen and (max-width: 660px) and (orientation: landscape) {
+  body {
+    font-size: 10px;
+  }
 }
 .header {
   -webkit-transition: all 4s linear;
@@ -11,11 +25,6 @@ body {
 }
 .header:hover {
   box-shadow: 0 2px 5px #333;
-}
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
-  .header {
-    font-size: 10px;
-  }
 }
 .footer {
   background-color: #000;
@@ -29,12 +38,39 @@ body {
 .footer:hover {
   background-color: #fbfefd;
 }
-.border-bottom,
-.header {
-  border-bottom: 1px solid #f6f6f6;
-  box-shadow: 0 2px 5px #f6f6f6;
+.col-1 {
+  width: 8.33333333%;
 }
-.light-background,
-.header {
-  background-color: #fff;
+.col-2 {
+  width: 16.66666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333%;
+}
+.col-5 {
+  width: 41.66666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333333%;
+}
+.col-8 {
+  width: 66.66666667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333%;
+}
+.col-11 {
+  width: 91.66666667%;
+}
+.col-12 {
+  width: 100%;
 }
