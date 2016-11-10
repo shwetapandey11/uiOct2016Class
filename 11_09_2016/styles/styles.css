@@ -1,0 +1,12 @@
+p {
+  word-wrap: break-word;
+}
+article {
+  margin-top: 200px;
+}
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}

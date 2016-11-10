@@ -9,30 +9,81 @@
 
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+        <link href="styles/styles.css" rel="stylesheet">
     </head>
     <body>
         <section class="container-fluid">
             <header>
-                <h1>Portal Login</h1>
+
             </header>
             <article class="container">
                 <div class="row">
                     <!--left side logo image-->
                     <figure class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <img src="images/logo.png">
+                        <img src="images/logo.png" class="img-responsive">
                     </figure>
 
                     <!--right side form-->
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
-                        <form name="mythriLoginForm" style="border:1px solid #000;height:500px">
+                        <form name="mythriLoginForm" class="form-horizontal">
+                            <!--username-->
+                            <div class="form-group">
+                                <label for="uname" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 control-label">Enter Username:</label>
+                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="text" id="uname" name="username" value="" class="form-control" required/>
+                                </div>
+                            </div>
 
+                            <!--password-->
+                            <div class="form-group">
+                                <label for="pass" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 control-label">Enter Password:</label>
+                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                    <input type="password" id="pass" name="password" value="" class="form-control" required/>
+                                </div>
+                            </div>
+
+                            <!--role-->
+                            <div class="form-group">
+                                <label for="role" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 control-label">Select Role:</label>
+                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                    <select class="form-control" id="role" name="role" required>
+                                        <option></option>
+                                        <option>Admin</option>
+                                        <option>Employee</option>
+                                        <option>HR</option>
+                                        <option>CEO</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!--buttons-->
+                            <div class="form-group">
+                                <!--Login button-->
+                                <button type="submit" class="btn btn-success">
+                                    <i class="glyphicon glyphicon-log-in"></i>&nbsp;Login
+                                </button>
+
+                                <!--Cancel button-->
+                                <button type="reset" class="btn btn-danger">
+                                    <i class="glyphicon glyphicon-trash"></i>&nbsp;Cancel
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
             </article>
             <footer>
-                <h6>SOme footer</h6>
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.google.com/maps" class="btn btn-link">Maps</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/mail" class="btn btn-link">Gmail</a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com" class="btn btn-link">Plus</a>
+                    </li>
+                </ul>
             </footer>
         </section>
     </body>
