@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Employee Details</title>
+
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="container-fluid">
+            <header class="container">
+                <div class="row">
+                    <!--Brand Logo: left side-->
+                    <figure class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <img src="images/logo.png" class="img-responsive"/>
+                    </figure>
+
+                    <!--Navigation: right side-->
+                    <nav class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <!--hide the navigation when the screen size is <768px by using .hidden-xs-->
+                        <ul class="nav nav-pills pull-right">
+                            <li class="active">
+                                <a href="">Payroll</a>
+                            </li>
+                            <li>
+                                <a href="">HR</a>
+                            </li>
+                            <li>
+                                <a href="">Insurance</a>
+                            </li>
+                        </ul>
+                        <!--make the following dropdown button visible on the screen size <768px-->
+                        <div class="btn-group pull-right visible-xs">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="glyphicon glyphicon-list"></i> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Payroll</a></li>
+                                <li><a href="#">HR</a></li>
+                                <li><a href="#">Insurance</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+            </header>
+            <article class="container" style="margin-top:0">
+                <header class="row">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="payroll.html">Payroll</a>
+                        </li>
+                        <li class="active">
+                            Time sheet
+                        </li>
+                    </ol>
+                </header>
+                <section class="row">
+                    <h1>I'M TIMESHEET PAGE</h1>
+                </section>
+                <footer class="row"></footer>
+            </article>
+            <footer class="container"></footer>
+        </section>
+    </body>
+</html>
