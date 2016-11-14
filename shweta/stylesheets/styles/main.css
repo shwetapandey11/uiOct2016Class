@@ -200,9 +200,13 @@ ul.nav-list li.nav-item a:hover {
   border-color: #204d74;
   line-height: 80px;
   margin: 10px;
+  cursor: pointer;
 }
 .text-box p {
   font-size: 14px;
+}
+.text-box:hover {
+  background-color: green;
 }
 .hidden {
   display: none;

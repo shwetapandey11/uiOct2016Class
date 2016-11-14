@@ -131,12 +131,17 @@ ul.nav-list {
 .text-box {
 	height: 80px;
 	color: @white;
-	background-color: #286090;
-    border-color: #204d74;
+	background-color: @text-box-bgcolor;
+    border-color: @text-box-border-color;
 	line-height: 80px;
 	margin: 10px;
+	cursor: pointer;
 	p{
 		font-size: @fontsize-default + 2;
+	}
+
+	&:hover {
+		background-color: green;
 	}
 }
 
