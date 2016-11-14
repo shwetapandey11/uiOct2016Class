@@ -1,0 +1,29 @@
+
+.responsive-mixin(@col-size; @prefix) when (@col-size < 13){
+    .column-@{prefix}-@{col-size} {
+        width: (100% / (12/@col-size));
+        float:left;
+        //border:1px solid green;
+    }
+
+    .column-offset-@{prefix}-@{col-size} {
+       margin-left: (100% / (12/@col-size+1)); 
+    }
+
+    .responsive-mixin((@col-size+1); @prefix);
+}
+
+
+
+//.generate-grid (@screen-width) {
+  //  @media (min-width: @{screen-width}) {
+    //  .responsive-mixin(1);
+    //}
+//}
+
+//.youarehere-check(@li) when (@li = 1) {
+//    li&.extend {
+//        padding: 0 10px;
+ //       content: " /U+003E";
+//    }
+//}
