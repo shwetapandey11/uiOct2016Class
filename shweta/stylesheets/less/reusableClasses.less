@@ -57,10 +57,11 @@ ul {
 	height: 30px;
 	border: 1px solid @primary-button-border;
 	border-radius: 1px;
-	background: linear-gradient(141deg, #2cb5e8 20%, #2cb5e8 75%);;
+	background-color: @primary-button-bgcolor;
+	border-color: @primary-button-border;
+	color: @primary-button-color;
 	&:hover {
-		border: 1px solid @button-border-hover;
-		box-shadow: 1px 0px 2px 2px @input-hover-color;
+		box-shadow: 1px 0px 2px 2px #888;
 	}
 }
 
@@ -129,8 +130,9 @@ ul.nav-list {
 
 .text-box {
 	height: 80px;
-	background-color: @lightblue;
 	color: @white;
+	background-color: #286090;
+    border-color: #204d74;
 	line-height: 80px;
 	margin: 10px;
 	p{

@@ -130,12 +130,13 @@ ul {
 .primary-button {
   width: 100%;
   height: 30px;
-  border: 1px solid #205e16;
+  border: 1px solid #204d74;
   border-radius: 1px;
-  background: linear-gradient(141deg, #2cb5e8 20%, #2cb5e8 75%);
+  background-color: #286090;
+  border-color: #204d74;
+  color: #fff;
 }
 .primary-button:hover {
-  border: 1px solid #4856ea;
   box-shadow: 1px 0px 2px 2px #888;
 }
 .form-vertical {
@@ -194,8 +195,9 @@ ul.nav-list li.nav-item a:hover {
 }
 .text-box {
   height: 80px;
-  background-color: #bcc5d3;
   color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
   line-height: 80px;
   margin: 10px;
 }
