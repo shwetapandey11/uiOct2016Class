@@ -1,0 +1,19 @@
+the idea behind the less compiler is to compile (= check for errors, syntax, etc.) before converting to css.
+
+less performs math.
+less writes fewer styles
+less can import another file.
+less can reuse the style
+
+
+
+
+
+
+
+to compile the less file, syntax is:
+lessc <source to less file>  >  <destination of css file>
+
+
+example:
+lessc /less/styles.less > /styles/styles.css
