@@ -1,5 +1,39 @@
-body {
-  background: url("../../images/logo.png");
-  color: #000;
+.container {
+  display: block;
+  margin: auto;
   float: none;
+  border: 1px solid #000;
+  height: 200px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul > li {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: underline;
+  color: #ff0000;
+}
+nav ul + span {
+  color: #00ff00;
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+    width: 990px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 660px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 }
