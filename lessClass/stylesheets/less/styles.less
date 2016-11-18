@@ -1,8 +1,28 @@
-body{
-    background: url("../../images/logo.png");
-    color: #000;
+.container{
+    display: block;
+    margin: auto;
     float: none;
+    border: 1px solid #000;
+    height: 200px;
 }
 
 
+nav{
+    ul{
+        list-style: none;
+
+        > li{
+            display: inline-block;
+            padding: 0 20px;
+            text-decoration: underline;
+            color: #ff0000;
+        }
+
+        + span{
+            color: #00ff00;
+        }
+    }
+}
+
 @import "responsive.less";
+@import "media.less";
