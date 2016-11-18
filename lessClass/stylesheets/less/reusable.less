@@ -1,0 +1,26 @@
+// i want to create a reusable class. which has some styles
+.border-red-with-center{
+    border: 1px solid red;
+    height: 90px;
+    width: 90%;
+    margin: auto;
+    float: none;
+}
+
+.button{
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 transparent;
+    padding: 10px 20px;
+}
+
+// but what about a feature where i can change the values based on the class name
+
+// a mixin is a reusable class but we can pass the values.
+
+.button-mixin(@height-value , @border-radius , @padding){
+    height: @height-value;
+    border-radius: 5px;
+    box-shadow: 0 0 0 transparent;
+    padding: @padding;
+}

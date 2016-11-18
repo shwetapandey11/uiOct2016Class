@@ -2,27 +2,71 @@
     display: block;
     margin: auto;
     float: none;
-    border: 1px solid #000;
+    border: 1px solid @black;
     height: 200px;
-}
+    position: relative;
 
+    nav{
+        ul{
+            list-style: none;
 
-nav{
-    ul{
-        list-style: none;
+            > li{
+                display: inline-block;
+                padding: 0 20px;
+                text-decoration: underline;
+                color: @red;
+            }
 
-        > li{
-            display: inline-block;
-            padding: 0 20px;
-            text-decoration: underline;
-            color: #ff0000;
+            + span{
+                color: @green;
+            }
+        }
+    }
+
+    section{
+        .div1{
+            .border-red-with-center;
         }
 
-        + span{
-            color: #00ff00;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 20px;
+        right: 35px;
+
+        .button-danger{
+            .button-mixin(20px , 5px , 0);
+             border: 1px solid @red;
+             background-color: @red;
+             color: @white;
+        }
+
+        .button-success{
+            .button-mixin(40px , 5px , 10px 20px);
+             border: 1px solid @green;
+             background-color: @green;
+             color: @white;
+
+             &:hover{
+                background-color: yellow;
+                color: black;
+                cursor: pointer;
+                box-shadow: 1px 1px 5px #000;
+             }
+
+             &::before{
+                clear: both;
+             }
+
+             &::after{
+                clear: both;
+             }
         }
     }
 }
 
-@import "responsive.less";
+
+@import "variables.less";
+@import "reusable.less";
 @import "media.less";
