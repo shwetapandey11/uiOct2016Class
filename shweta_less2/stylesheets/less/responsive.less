@@ -1,0 +1,34 @@
+// create grids
+
+.grid-mixin(@grid; @viewport) when (@grid <=12) {		
+	.column-@{viewport}-@{grid} {
+		width: round(@grid*100%/12, 2);
+		margin-left: 0;
+		float: left;
+	}
+	.grid-mixin(@grid+1; @viewport)
+}
+
+
+// create offsets
+
+.grid-offset-mixin(@grid; @viewport) when (@grid <12){
+	.column-@{viewport}-offset-@{grid} {
+		margin-left: round(@grid*100%/12, 2);
+	}
+	.grid-offset-mixin(@grid+1; @viewport);
+}
+
+
+//combining multiple media calls into one
+
+.media-specific-style(@size-prefix) {
+	.grid-mixin(1; @size-prefix);
+	.grid-offset-mixin(0; @size-prefix);
+	.@{size-prefix}-hidden {
+		display: none;
+	}
+	.@{size-prefix}-visible {
+		display: inline; 
+	}
+}

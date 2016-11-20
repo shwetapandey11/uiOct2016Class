@@ -1,0 +1,153 @@
+@font-face {
+	font-family: myFont;
+	src: url(../../fonts/FabricsLight.ttf);
+}
+
+body {
+
+	position: relative;
+	font-family: @website-font;
+	font-size: @website-font-size;
+}
+
+.commonContain {
+	margin: 0 auto;
+	display: block;
+}
+
+.contains100 {
+	width: 100%;
+	.commonContain;
+}
+
+.contains95 {
+	width: 90%;
+	padding-left: 5px;
+	padding-right: 5px;
+	.commonContain;
+}
+
+.row {
+	width: 100%;
+	float: none;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section {
+	margin: 170px auto;
+	min-height:200px;
+	overflow: scroll;
+}
+
+h3 {
+	color: @submit-color;
+	font-family: myFont, Verdana, Geneva, sans-serif;
+	font-size: @website-font-size + 15;
+}
+
+h4 {
+	color: @submit-color;
+	& ~i {
+		color: @submit-color;
+	}
+}
+p {
+	padding: 10px;
+	padding-right: 40px;
+	color: @gray;
+}
+
+.border-right {
+	border-right: 1px solid @gray;
+}
+
+a {
+	text-decoration: none;
+}
+
+.no-list-style {
+	list-style-type: none;
+}
+
+.horizontal-list {
+	display: inline-block;
+	float: left;
+
+}
+
+.logo-shadow {
+	box-shadow: 0px 0px 40px 15px @white;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.bordercircle {
+	border-radius: 50%;
+}
+
+.page-heading {
+	.center-text;
+	text-decoration: underline;
+	padding-bottom: 20px;
+	h3 {
+		font-size: 24px;
+		font-weight: 100;
+	}
+}
+
+.active {
+	background-color: #155fd6;
+}
+
+.form-vertical {
+	border-radius: 5px;
+	background-color: lightgray;
+	padding: 10px;
+
+	.form-field {
+		padding-bottom:10px;
+		input {
+			display: block;
+			height: 40px;
+			width:100%;
+
+			&::after {
+				clear: both;
+			}
+		}
+		label {
+			font-size: @website-font-size;
+			display: block;
+			width:100%;
+		}
+	} 
+}
+
+.button-submit {
+	background-color: @submit-color;
+	width: 100%;
+	padding: 5px;
+	border: 1px solid transparent;
+}
+
+.details {
+	height: 150px;
+	background-color: @submit-color; 
+	//.bordercircle;
+	margin-bottom: 5px;
+}
+
+.common-text-color{
+	color: @submit-color;
+}
+
+
+
+
+
+
+
