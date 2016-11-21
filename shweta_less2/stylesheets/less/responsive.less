@@ -2,11 +2,11 @@
 
 .grid-mixin(@grid; @viewport) when (@grid <=12) {		
 	.column-@{viewport}-@{grid} {
-		width: round(@grid*100%/12, 2);
+		width: round((@grid*100%/12), 2);
 		margin-left: 0;
 		float: left;
 	}
-	.grid-mixin(@grid+1; @viewport)
+	.grid-mixin(@grid+1; @viewport);
 }
 
 
@@ -14,7 +14,7 @@
 
 .grid-offset-mixin(@grid; @viewport) when (@grid <12){
 	.column-@{viewport}-offset-@{grid} {
-		margin-left: round(@grid*100%/12, 2);
+		margin-left: round((@grid*100%/12), 2);
 	}
 	.grid-offset-mixin(@grid+1; @viewport);
 }
@@ -29,6 +29,22 @@
 		display: none;
 	}
 	.@{size-prefix}-visible {
-		display: inline; 
+		display: inline-block; 
 	}
 }
+
+
+.generate-columns(@device-width; @i) when(@i <= 12){
+
+    .column-@{i} {
+      @single-width: (@device-width/@i);
+      width: @i * @single-width;
+      }
+
+    .generate-columns(@device-width; @i+1);
+
+}
+
+.generate-columns(1200; 1);
+
+

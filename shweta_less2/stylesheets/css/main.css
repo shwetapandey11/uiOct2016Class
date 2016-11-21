@@ -1,3 +1,39 @@
+.column-1 {
+  width: 1200;
+}
+.column-2 {
+  width: 1200;
+}
+.column-3 {
+  width: 1200;
+}
+.column-4 {
+  width: 1200;
+}
+.column-5 {
+  width: 1200;
+}
+.column-6 {
+  width: 1200;
+}
+.column-7 {
+  width: 1200;
+}
+.column-8 {
+  width: 1200;
+}
+.column-9 {
+  width: 1200;
+}
+.column-10 {
+  width: 1200;
+}
+.column-11 {
+  width: 1200;
+}
+.column-12 {
+  width: 1200;
+}
 @media only screen and (min-width: 1280px) {
   .column-lg-1 {
     width: 8.33%;
@@ -99,7 +135,7 @@
     display: none;
   }
   .lg-visible {
-    display: inline;
+    display: inline-block;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1280px) {
@@ -203,7 +239,7 @@
     display: none;
   }
   .md-visible {
-    display: inline;
+    display: inline-block;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 800px) {
@@ -307,7 +343,7 @@
     display: none;
   }
   .sm-visible {
-    display: inline;
+    display: inline-block;
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 480px) {
@@ -411,17 +447,8 @@
     display: none;
   }
   .xs-visible {
-    display: inline;
+    display: inline-block;
   }
-}
-@font-face {
-  font-family: myFont;
-  src: url(../../fonts/FabricsLight.ttf);
-}
-body {
-  position: relative;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 16px;
 }
 .commonContain {
   margin: 0 auto;
@@ -540,6 +567,15 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+@font-face {
+  font-family: myFont;
+  src: url(../../fonts/FabricsLight.ttf);
+}
+body {
+  position: relative;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 16px;
 }
