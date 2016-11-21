@@ -4,18 +4,74 @@
   float: none;
   border: 1px solid #000;
   height: 200px;
+  position: relative;
 }
-nav ul {
+.container nav ul {
   list-style: none;
 }
-nav ul > li {
+.container nav ul > li {
   display: inline-block;
   padding: 0 20px;
   text-decoration: underline;
   color: #ff0000;
 }
-nav ul + span {
+.container nav ul + span {
   color: #00ff00;
+}
+.container section .div1 {
+  border: 1px solid red;
+  height: 90px;
+  width: 90%;
+  margin: auto;
+  float: none;
+}
+.container footer {
+  position: absolute;
+  bottom: 20px;
+  right: 35px;
+}
+.container footer .button-danger {
+  height: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 transparent;
+  padding: 20px;
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
+  color: #fff;
+}
+.container footer .button-success {
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 transparent;
+  padding: 10px 20px;
+  border: 1px solid #00ff00;
+  background-color: #00ff00;
+  color: #fff;
+}
+.container footer .button-success:hover {
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #000;
+}
+.container footer .button-success::before {
+  clear: both;
+}
+.container footer .button-success::after {
+  clear: both;
+}
+.border-red-with-center {
+  border: 1px solid red;
+  height: 90px;
+  width: 90%;
+  margin: auto;
+  float: none;
+}
+.button {
+  height: 35px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 transparent;
+  padding: 10px 20px;
 }
 @media only screen and (min-width: 1200px) {
   .container {
