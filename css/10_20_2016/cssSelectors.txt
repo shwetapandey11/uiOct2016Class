@@ -1,0 +1,10 @@
+> : select the immediate child
++ : selects the immediate sibling
+~ : selects all the siblings immediate to that parent
+
+
+example:
+
+.container > p means select the p whose child is an element with class "container"
+
+

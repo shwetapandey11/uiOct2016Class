@@ -1,0 +1,4 @@
+1. get the latest code and inside javascript/11_22_2016, create a folder with your name and inside that create a html and a js file
+2. source the js file in its proper location.
+3. inside the js file, create all the primitive data types and then console.log them.
+
