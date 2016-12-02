@@ -24,5 +24,5 @@
     var test = z;
     test.firstName = 'John';
 
-    console.log(z);
+    //console.log(z);
 })();
