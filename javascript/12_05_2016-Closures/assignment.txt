@@ -1,0 +1,17 @@
+1. take the latest code and inside 12_05_2015-closures folder, create a new folder with your name.
+2. using the concepts of closures and classes, create a class called 'Mathematics' inside another class called 'total'
+*** MAKE SURE THAT 'Mathematics' IS NOT A PROPERTY OF 'total'
+3. mathematics should take two numbers as arguements.
+4. mathematics should have following properties:
+    sum: this should result out sum of the two arguements
+    difference: this should result out difference of the two arguements
+    multiplication: this should result out multiplication of the two arguements
+    division: this should result out division of the two arguements
+5. using closures, create four properties in 'total':
+    addition,
+    substract,
+    product,
+    dividend
+
+    make sure that these properties take the outputs from the 'mathematics' class.
+6. console.log the answers
