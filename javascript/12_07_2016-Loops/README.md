@@ -137,6 +137,10 @@ CONDITIONS IN JS
             case <match the condition>: {
                 // logic
             }
+                break;
+            default: {
+                // logic if all the cases fail
+            }    
          }
          
       3. if elseif else statements
