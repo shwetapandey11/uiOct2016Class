@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test Class</title>
+    </head>
+    <body>
+        <a href="https://www.google.com" onclick="dontNavigate(event)">Click ME</a>
+
+        <form name="myTestForm" onsubmit="submitForm()">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"
+                        onchange="myChange()" onfocus="">
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"
+                        onchange="myChange()">
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
