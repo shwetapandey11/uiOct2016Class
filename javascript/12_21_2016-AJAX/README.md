@@ -180,6 +180,62 @@ JSON has two methods:
                                //         }
         
         
+______________________________________________________________________________________________________
+        
+<b>PROMISES</b>
+        
+The basic idea is to wait for either success or failure of any operation in an asynchronous world
+
+Promises looks was success/resolved/fulfilled state or failure/rejection status
+
+For example, when we make an API call to the server, the response coming from the server is either success or failure.
+we can use promises to handle these success or failure calls accordingly.
+
+    <API>.promise.then(
+        // success
+        function(resolved){
+            // all the 2xx and 3xx responses are captured here
+        },
+        // error
+        function(reject){
+            // all the 4xx and 5xx responses are captured here
+        }
+    )
+    
+<b>deferred</b>
+
+These are property of the promise object which trigger the change in state, from resolve or reject
+
+    example:
+        function APICall(url){
+            var deferred = Promise.defer();
+                
+            <API call with the 'url'>.promise.then(function(successResp){
+                // it was a success. so move forward with the data = successResp
+                deferred.resolve(successResp);
+            },
+            function(errorResp){
+                // stop the process and break here. dont proceed further
+                deferred.reject(errorResp);
+            });
+            
+            return deferred.promise;
+        }
+        
+        
+        window.buttonClick = function(){
+            // perform some logic
+            
+            APICall(https://www.google.com/posts).then(function(googleData){
+                APICall(https://www.yahoo.com/posts).then(function(yahooData){
+                    // perforn the logic to show both googleData and yahooData in the html
+                });
+            })
+        };
+    
+    
+    
+         
         
         
         
