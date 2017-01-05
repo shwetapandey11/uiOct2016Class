@@ -15,13 +15,27 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="projectApp">
+  <body data-ng-app="projectApp"> <!--$rootScope-->
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
+  <!--<div ng-controller="projectController"> &lt;!&ndash;$scope&ndash;&gt;
+    &lt;!&ndash;Angular expressions&ndash;&gt;
+    <span>{{user.firstName}} {{user.lastName}} is {{11+10}} yrs old</span>
+  </div>
 
+  <div ng-controller="srikarController"> &lt;!&ndash;$scope&ndash;&gt;
+    <span ng-bind="user.firstName"></span>
+    <span ng-bind="user.lastName"></span>
+    <br>
+    <input type="text" id="firstName" name="firstName" placeholder="First Name" ng-model="user.firstName" ng-change="checkFirstName()">
+    <br>
+    <input type="text" id="lastName" name="lastName" placeholder="Last Name" ng-model="user.lastName">
+  </div>-->
+
+    <div ng-view=""></div>
 
     <!------------------------------------------------>
 
@@ -55,6 +69,8 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/ProjectController.js"></script>
+        <script src="scripts/controllers/HomeController.js"></script>
         <!-- endbuild -->
-</body>
+  </body>
 </html>
