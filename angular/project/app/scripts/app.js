@@ -34,9 +34,14 @@
                   'ngRoute',
                   'ngSanitize',
                   'ngTouch',
-                  'projectApp.controllers'])
+                  'projectApp.controllers',
+                  'projectApp.services'])
     .config(AppConfig)
     .run(AppRun);
-  // create a custom module
+
+  // create a custom module for controllers
   angular.module('projectApp.controllers',[]);
+
+  // create a custom module for services
+  angular.module('projectApp.services',[]);
 })(window.angular || (window.angular = {}));

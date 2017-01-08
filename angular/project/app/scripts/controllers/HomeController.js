@@ -3,21 +3,15 @@
   'use strict';
 
   // callback function for controller
-  function HomeController($scope,$location){
-    $scope.user = {
-      'username': '',
-      'password': ''
-    };
+  function HomeController($scope,UserFactory,LoginService){
+    $scope.user = UserFactory.user;
 
     $scope.loginUser = function(){
-      if($scope.user.username === 'Srikar' && $scope.user.password === 'Shastry'){
-        console.log('Login was successful');
-        $location.path('/about');
-      }
+      LoginService.performLogin();
     };
   }
   // inject the dependencies
-  HomeController.$inject = ['$scope','$location'];
+  HomeController.$inject = ['$scope','UserFactory','LoginService'];
 
   // call the module and define the controller
   angular.module('projectApp.controllers').controller('HomeController',HomeController);
