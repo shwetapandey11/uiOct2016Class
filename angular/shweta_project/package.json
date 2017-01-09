@@ -1,0 +1,11 @@
+{
+  "name": "login_ui_app",
+  "version": "1.0.0",
+  "description": "angular login app ",
+  "author": "Shweta Pandey",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "grunt": "^1.0.1"
+  }
+}
