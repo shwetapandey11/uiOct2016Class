@@ -9,7 +9,7 @@
       console.log($scope.user);
 
       LoginService.checkLogin($scope);
-    }
+    };
     $scope.init();
   }
   ProjectController.$inject = ['$rootScope','$scope','UserFactory','LoginService'];

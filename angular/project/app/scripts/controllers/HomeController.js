@@ -3,15 +3,17 @@
   'use strict';
 
   // callback function for controller
-  function HomeController($scope,UserFactory,LoginService){
-    $scope.user = UserFactory.user;
+  function HomeController(UserFactory,LoginService){
+    // vm = view model
+    var vm = this;
+    vm.user = UserFactory.user;
 
-    $scope.loginUser = function(){
+    vm.loginUser = function(){
       LoginService.performLogin();
     };
   }
   // inject the dependencies
-  HomeController.$inject = ['$scope','UserFactory','LoginService'];
+  HomeController.$inject = ['UserFactory','LoginService'];
 
   // call the module and define the controller
   angular.module('projectApp.controllers').controller('HomeController',HomeController);

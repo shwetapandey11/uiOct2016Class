@@ -1,15 +1,18 @@
 <section class="container">
   <header></header>
   <article>
+
+    <srikar-element viswa="kandi"></srikar-element>
+
     <form >
       <div class="form-group">
-        <input type="text" id="username" name="username" placeholder="Enter username" ng-model="user.username">
+        <input type="text" id="username" name="username" placeholder="Enter username" ng-model="HomeCtrl.user.username">
       </div>
       <div class="form-group">
-        <input type="password" id="password" name="password" placeholder="Enter password" ng-model="user.password">
+        <input type="password" id="password" name="password" placeholder="Enter password" ng-model="HomeCtrl.user.password">
       </div>
       <div class="form-group">
-        <button type="button" class="btn btn-primary" ng-click="loginUser()">Submit</button>
+        <button type="button" class="btn btn-primary" ng-click="HomeCtrl.loginUser()">Submit</button>
       </div>
     </form>
   </article>
