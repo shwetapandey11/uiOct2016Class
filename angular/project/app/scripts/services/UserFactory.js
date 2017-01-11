@@ -9,7 +9,9 @@
 
     self.user = {
       username: '',
-      password: ''
+      password: '',
+      age: '',
+      firstName: 'My name is Srikar'
     };
 
     return self;

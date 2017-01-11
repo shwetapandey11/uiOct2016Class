@@ -83,3 +83,73 @@ From angular's prospective, these are special types of attributes using which:
     <body>
         <srikar-element></srikar-element>
     </body>
+    
+_______________________________________________________________________________________________________
+    
+ISOLATING THE SCOPE IN DIRECTIVE
+    
+When we are writing element level directive, we may end up rendering an html inside that directive.
+This data binding is going to work only once. We will not be able to control it like the controllers and hence, we need to connect a bridge between the parent scope to the directive scope.
+To avoid this issue, we can isolate the scope from directive to the upper scope chain.
+In short, we need to connect a bridge between the two scopes.
+
+    Steps:
+        Step 1:
+            Create an element level directive and make sure that this directive has the 'scope' property
+            
+        Step 2:
+            Get the view model and the controller setup and write the directive-element inside the view model
+            
+        Step 3:
+            create an attribute to this directive-element and assign the value from the controller to this attribute
+            
+        Step 4:
+            inside the directive, for the scope property, simply use the '=' symbol to connect the bridge.
+            
+    Example:
+        SrikarElement.js:
+        
+        function SrikarElement(){
+            var element = {
+              restrict: 'E',
+              scope: {
+                firstName: '=ngModel'
+              },
+              templateUrl: '../../templates/srikarElement.html',
+              link: function(scope,element,attribute){
+                console.log(scope.firstName);
+              }
+            };
+        
+            return element;
+        }        
+        SrikarElement.$inject = [];
+        
+        // call the directives module
+        angular.module('projectApp.directives').directive('srikarElement',SrikarElement);
+          
+          
+        SrikarElement.html:
+        <form class="form-group">
+            <input type="text" id="firstName" name="firstName" class="form-control" ng-model="firstName">
+        </form>
+
+        Home.html:
+        <srikar-element ng-model="HomeCtrl.user.firstName"></srikar-element>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

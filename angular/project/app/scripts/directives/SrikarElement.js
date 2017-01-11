@@ -6,10 +6,12 @@
   function SrikarElement(){
     var element = {
       restrict: 'E',
+      scope: {
+        firstName: '=ngModel'
+      },
       templateUrl: '../../templates/srikarElement.html',
       link: function(scope,element,attribute){
-        console.log(attribute.viswa);
-        console.log(element[0].children[0]);
+        console.log(scope.firstName);
       }
     };
 
