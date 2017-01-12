@@ -12,8 +12,15 @@
   AppRun.$inject = ['$rootScope'];
   */
 
-  angular.module('shwetaYeomanApp',['ngAnimate','ngCookies','ngAria','ngRoute','ngTouch','ngResource','ngSanitize','newModule.controllers']);
-
+  angular.module('shwetaYeomanApp',
+      ['ngAnimate',
+      'ngCookies',
+      'ngAria',
+      'ngRoute',
+      'ngTouch',
+      'ngResource',
+      'ngSanitize',
+      'newModule.controllers']);
 
   //.run(AppRun);
 
