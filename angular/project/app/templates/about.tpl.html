@@ -1,1 +1,33 @@
-<h1>I'm About page</h1>
+<section class="container">
+  <header>
+    <h1>I'm About page</h1>
+  </header>
+  <article>
+    <!--1. table
+    2. head
+      2.a row
+        2.a.i columns-->
+    <!--<table class="table table-bordered">
+      <thead>
+        <tr>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>Roll Number</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="classRoom in ProjectCtrl.classRooms">
+          <td ng-bind="classRoom.firstName"></td>
+          <td ng-bind="classRoom.lastName"></td>
+          <td ng-bind="classRoom.rollNo"></td>
+        </tr>
+
+      </tbody>
+    </table>-->
+    <div id="grid1" ui-grid="{ data: ProjectCtrl.classRooms }" class="grid"></div>
+  </article>
+  <footer></footer>
+</section>
+
+
+

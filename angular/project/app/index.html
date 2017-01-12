@@ -9,6 +9,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -34,6 +35,11 @@
     <br>
     <input type="text" id="lastName" name="lastName" placeholder="Last Name" ng-model="user.lastName">
   </div>-->
+  <div class="container">
+    <srikar-element ng-model="HomeCtrl.user.firstName"></srikar-element>
+  </div>
+
+
   <div ng-view=""></div>
 
     <!------------------------------------------------>
@@ -63,6 +69,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
