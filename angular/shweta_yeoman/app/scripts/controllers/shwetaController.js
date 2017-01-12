@@ -1,15 +1,19 @@
-// IIFE
 
-(function(angular) {
+angular.module('newModule.controllers',[]).controller('shwetaController',['$scope','$location',
+	function ($scope,$location) {
+		'use strict';
+		$scope.user = {};
+		$scope.user.firstName = 'Shweta';
+		$scope.user.lastName = 'Ojha';
 
-	'use strict';
+		$scope.url = $location.absUrl();
+		$scope.protocol = $location.protocol();
+		$scope.host = $location.host();
 
-	function ShwetaController($scope) {
-		console.log($scope);
-	}
+		$scope.reverse = function () {
+			$scope.user.firstName = $scope.user.firstName.split('').reverse().join('');
+			$scope.user.lastName = $scope.user.lastName.split('').reverse().join('');
+		};
+}]);
 
-	ShwetaController.$inject = ['$scope'];
 
-	angular.module('newModule.controllers',[]).controller('shwetaController',ShwetaController);
-
-})(window.angular || (window.angular = {}));

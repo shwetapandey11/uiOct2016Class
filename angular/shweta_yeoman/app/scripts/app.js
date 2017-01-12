@@ -1,4 +1,6 @@
-(function(angular){
+//IIFE
+
+(function(){
 
   'use strict';
   /* AppRun is run only once the app starts. */
@@ -24,4 +26,4 @@
 
   //.run(AppRun);
 
-})(window.angular || (window.angular = {}));// in case angular object is unavailable, we set it to an empty object.
+})();// in case angular object is unavailable, we set it to an empty object.

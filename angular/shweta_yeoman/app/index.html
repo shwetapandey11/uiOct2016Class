@@ -23,18 +23,22 @@
     <!-- Add your site or application content here -->
 
       <div ng-controller="projectController">
-        <p>Hello</p>
+        <p>{{obj.key}}</p>
       </div>
 
       <div ng-controller="shwetaController">
-        <p>Welcome Shweta!!!</p>
+        <p>Welcome {{user.firstName}} {{user.lastName}} {{url}} {{protocol}} {{host}}</p>
+        <input type="text" ng-model="user.firstName" />
+        <input type="text" ng-model="user.lastName" />
+        <input type="text" ng-model="url" />
+        <input type="button" value="Reverse" ng-click="reverse()" />
       </div>
 
 
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
+     <!-- <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
@@ -42,7 +46,7 @@
 
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
-    </script>
+    </script> -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
