@@ -1,0 +1,24 @@
+{
+  "name": "project1",
+  "description": "test",
+  "main": "index.js",
+  "authors": [
+    "shweta"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "test"
+  ],
+  "homepage": "https://github.com/shwetapandey11/uiOct2016Class",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7"
+  }
+}

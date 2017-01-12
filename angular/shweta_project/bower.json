@@ -1,0 +1,26 @@
+{
+  "name": "login_ui_app",
+  "description": "angular login app",
+  "main": "index.html",
+  "authors": [
+    "Shweta Pandey"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "app"
+  ],
+  "homepage": "https://github.com/shwetapandey11/uiOct2016Class",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
