@@ -27,7 +27,7 @@
 
   // to define the app module, we write:
   angular.module('projectApp',
-                ['ngAnimate',
+                [ 'ngAnimate',
                   'ngCookies',
                   'ngMessages',
                   'ngAria',

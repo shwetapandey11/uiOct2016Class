@@ -7,7 +7,7 @@
 
     vm.init = function(){
       // create a clone/duplicate of the user in the factory.
-      vm.user = angular.copy(UserFactory.user);
+      vm.user = angular.copy(LoginService.returnUser());
 
       vm.classRooms = angular.copy(UserFactory.classRooms);
 

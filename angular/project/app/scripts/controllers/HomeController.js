@@ -6,10 +6,12 @@
   function HomeController(UserFactory,LoginService){
     // vm = view model
     var vm = this;
-    vm.user = UserFactory.user;
+
+    vm.user = angular.copy(UserFactory.user);
+    vm.loginHasFailed = false;
 
     vm.loginUser = function(){
-      LoginService.performLogin();
+      LoginService.performLogin(vm);
     };
   }
   // inject the dependencies
