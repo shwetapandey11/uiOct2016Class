@@ -81,3 +81,32 @@ body {
     border-bottom: 0;
   }
 }
+
+.form-group{
+  margin-bottom: 30px;
+  position: relative;
+}
+
+input.ng-dirty.ng-invalid{
+  border: 1px solid red;
+}
+
+.animate-if{
+  position: absolute;
+  bottom: -20px;
+  color: red;
+}
+
+.animate-if.ng-enter, .animate-if.ng-leave {
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.animate-if.ng-enter,
+.animate-if.ng-leave.ng-leave-active {
+  opacity:0;
+}
+
+.animate-if.ng-leave,
+.animate-if.ng-enter.ng-enter-active {
+  opacity:1;
+}
