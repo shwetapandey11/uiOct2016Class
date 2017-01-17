@@ -14,6 +14,7 @@
         // **REMEMBER SESSION/LOCAL STORAGE ONLY HOLDS STRING DATA
         $window.sessionStorage.setItem('user',angular.toJson({username:vm.user.username,password:vm.user.password}));
 
+        /* /#!/about */
         $location.path('/about');
       }
       else{
@@ -22,7 +23,7 @@
     };
 
     // logic to check if the username and password fields are not empty
-    self.checkLogin = function($scope){
+    self.checkLogin = function(){
       var user = $window.sessionStorage.getItem('user');
       if(user === null){
         $location.path('/home');

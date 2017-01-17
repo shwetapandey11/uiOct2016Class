@@ -100,6 +100,43 @@ In short, we need to intercept every api call and based on the API's header, we 
 Hence, the httpInterceptor was introduced.
 
 
+____________________________________________________________________
+
+https://jsonplaceholder.typicode.com/users
+
+
+two ways of requesting the data:
+
+1. by path parameter (commonly used in GET method)
+
+	/users?firstName=srikar
+
+2. by query parameter
+
+	we use payloads (commonly used in POST method)
+	/users
+
+	{
+		firstName: 'Srikar'
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

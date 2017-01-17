@@ -16,6 +16,9 @@
       })
       .otherwise('/home');
 
+
+      /*$routeParam*/
+
     // Server API call config
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];

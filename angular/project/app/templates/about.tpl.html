@@ -7,25 +7,55 @@
     2. head
       2.a row
         2.a.i columns-->
-    <!--
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <td>First Name</td>
-          <td>Last Name</td>
-          <td>Roll Number</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="classRoom in ProjectCtrl.classRooms">
-          <td ng-bind="classRoom.firstName"></td>
-          <td ng-bind="classRoom.lastName"></td>
-          <td ng-bind="classRoom.rollNo"></td>
-        </tr>
+    <div class="form-group">
+      <input type="text" id="filerTable" name="filterTable"
+             class="form-control" placeholder="Filter the table below..." ng-model="ProjectCtrl.filterTable">
+    </div>
 
-      </tbody>
-    </table>-->
-    <div id="grid1" ui-grid="{ data: ProjectCtrl.posts }" class="grid"></div>
+    <div class="row">
+      <aside class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+        <ul>
+          <li>
+            <a ng-click="ProjectCtrl.listFilter = 'Omnis'">Omnis</a>
+          </li>
+          <li>
+            <a ng-click="ProjectCtrl.listFilter = 'sunt qui'">sunt qui</a>
+          </li>
+
+          <li>
+            <a ng-click="ProjectCtrl.listFilter = ''">Clear filters &#10005;</a>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <td>ID</td>
+            <td>Title</td>
+            <td>UserId</td>
+            <td></td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr ng-repeat="classRoom in ProjectCtrl.posts | filter:ProjectCtrl.filterTable | filter:ProjectCtrl.listFilter">
+            <!--$index = 9-->
+            <td ng-bind="classRoom.id" id="{{$index}}"></td>
+            <td ng-bind="classRoom.title"></td>
+            <td ng-bind="classRoom.userId"></td>
+            <td>
+              <a href="/about/{{$index}}">Goto {{$index}} Record</a>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+
+    <!--<div id="grid1" ui-grid="{ data: ProjectCtrl.posts }" class="grid"></div>-->
   </article>
   <footer></footer>
 </section>

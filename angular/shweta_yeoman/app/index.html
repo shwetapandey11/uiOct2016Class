@@ -56,7 +56,8 @@
     <div ng-controller="shwetaController">
         <div ng-repeat="x in user" style="border:1px solid blue;margin:5px;height:auto;">
             <ul ng-repeat="(k, v) in x">
-                <li> {{k}} {{v}} {{user.firstName}}</li>
+                <li> {{k}} = {{v}} <br/>
+                {{x.id}}, {{x.roll}}, {{x.hobby}} {{user.firstName}}</li>
             </ul>
         </div>
     </div>
