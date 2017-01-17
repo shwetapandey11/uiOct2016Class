@@ -1,19 +1,27 @@
+(function(){
+	'use strict';
 
-angular.module('newModule.controllers',[]).controller('shwetaController',['$scope','$location',
-	function ($scope,$location) {
-		'use strict';
-		$scope.user = {};
-		$scope.user.firstName = 'Shweta';
-		$scope.user.lastName = 'Ojha';
+	angular.module('shwetaYeomanApp').controller('shwetaController',['$scope',
 
-		$scope.url = $location.absUrl();
-		$scope.protocol = $location.protocol();
-		$scope.host = $location.host();
-
-		$scope.reverse = function () {
-			$scope.user.firstName = $scope.user.firstName.split('').reverse().join('');
-			$scope.user.lastName = $scope.user.lastName.split('').reverse().join('');
-		};
-}]);
-
-
+	function($scope){
+		$scope.user = people;
+		}
+	]);
+		var people = [
+		{
+			id: 1,
+			roll: 123,
+			hobby: 'music'
+		},
+		{
+			id: 2,
+			roll: 223,
+			hobby: 'dance'
+		},
+		{
+			id: 2,
+			roll: 223,
+			hobby: 'reading'
+		}
+	];
+})();

@@ -1,29 +1,21 @@
-//IIFE
-
-(function(){
-
-  'use strict';
-  /* AppRun is run only once the app starts. */
-
-  /*Since AppRun is not a controller, $scope can'tbe injected. $rootScope is Injected. */
-
-  /*function AppRun($rootScope) {
-    console.log($rootScope);
-
-  }
-  AppRun.$inject = ['$rootScope'];
-  */
-
-  angular.module('shwetaYeomanApp',
-      ['ngAnimate',
-      'ngCookies',
-      'ngAria',
-      'ngRoute',
-      'ngTouch',
-      'ngResource',
-      'ngSanitize',
-      'newModule.controllers']);
-
-  //.run(AppRun);
-
-})();// in case angular object is unavailable, we set it to an empty object.
+angular.module('shwetaYeomanApp',['ngRoute'])
+  .config(function($routeProvider){
+    'use strict';
+    $routeProvider
+      .when('/main',{
+        templateUrl: '../views/main.html',
+        controller: 'mainController'
+      })
+      .when('/about',{
+        templateUrl: '../views/about.html',
+        controller: 'shwetaController'
+      })
+      .otherwise('/index.html');
+  })
+  .run(function($rootScope){
+    'use strict';
+    $rootScope.user = {
+      userName : '',
+      password: ''
+    };
+  });

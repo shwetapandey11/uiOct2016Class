@@ -1,25 +1,17 @@
-// IIFE 
+angular.module('shwetaYeomanApp').controller('projectController',['$scope','$rootScope',
+	function($scope,$rootScope){
+		'use strict';
+		/*$scope.firstName= 'Shweta';
+		$scope.lastName='Ojha';
+		}*/
 
-(function(angular){
-	'use strict';
-
-	/*function ProjectController($scope){
-		console.log($scope);
+		$scope.user = {
+			firstName: 'Shweta',
+			lastName: 'Ojha'
+		};
+		$rootScope.user = {
+			firstName: 'Sanjeev',
+			lastName: 'Ojha'
+		};
 	}
-
-	ProjectController.$inject = ['$scope'];*/
-
-	angular.module('shwetaYeomanApp').controller('projectController',
-		function($scope){
-			/*$scope.obj = {};
-			$scope.obj.key = 'key1';
-			$scope.obj.val = 'val1';*/
-	});
-
-}
-)(window.angular || (window.angular = {}));
-
-
-angular.module('shwetaYeomanApp').controller('projectController', function () {
-
-});
+]);

@@ -21,32 +21,45 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <div ng-controller="projectController" style="border:1px solid green;margin:5px;">
 
-      <div ng-controller="projectController">
-        <p>{{obj.key}}</p>
-      </div>
+    <!-- TWO ways of binding data. 
+        1. ng-bind i.e.
+        2. Expression i.e. {{}}
+     -->
 
-      <div ng-controller="shwetaController">
-        <p>Welcome {{user.firstName}} {{user.lastName}} {{url}} {{protocol}} {{host}}</p>
-        <input type="text" ng-model="user.firstName" />
-        <input type="text" ng-model="user.lastName" />
-        <input type="text" ng-model="url" />
-        <input type="button" value="Reverse" ng-click="reverse()" />
-      </div>
+        <p> Using Ng-bind <span ng-bind="user.firstName"></span></p>
+    
+    <!-- OR the the follwing will do the same thing  -->
+        <span> Using double curly braces {{user.lastName}} </span>
+    </div>  
 
+    <!-- Sharing data betwen controllers
+        1. $rootScope [not advised, as it assigns the rootscope with that data throughout the applicatoin]
+        
+        2. Services [preferred way]
+     -->
 
+     <!--  Sharing data between controllers ex below using rootscope -->
+    <div ng-controller="mainController" style="border:1px solid red">
+        <input type="text" name="firstName" ng-model="user.firstName">
+        <p ng-bind="user.firstName"></p>
+        <input type="text" name="lastName" ng-model="user.lastName">
+        <p><span>{{user.lastName}}</span></p>
+        <button ng-click="reverse()">Reverse</button>
+    </div>
 
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <!-- <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script> -->
+    <!-- ngRoute -change view -->
+    <div ng-view="">
+    </div>
+      
+    <div ng-controller="shwetaController">
+        <div ng-repeat="x in user" style="border:1px solid blue;margin:5px;height:auto;">
+            <ul ng-repeat="(k, v) in x">
+                <li> {{k}} {{v}} {{user.firstName}}</li>
+            </ul>
+        </div>
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -68,6 +81,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/projectController.js"></script>
         <script src="scripts/controllers/shwetaController.js"></script>
+        <script src="scripts/controllers/mainController.js"></script>
         <!-- endbuild -->
 </body>
 </html>
