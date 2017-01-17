@@ -2,7 +2,8 @@
 (function(angular){
   'use strict';
 
-  function AppConfig($routeProvider){
+  function AppConfig($routeProvider,$httpProvider){
+    // client side routing
     $routeProvider
       .when('/home',{
         templateUrl: '../templates/home.tpl.html',
@@ -14,31 +15,35 @@
         controllerAs: 'ProjectCtrl'
       })
       .otherwise('/home');
+
+    // Server API call config
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
+    $httpProvider.defaults.headers.common['Content-Type'] = 'application/json';
+    $httpProvider.defaults.headers.common.Accept = 'application/json';
+
   }
-  AppConfig.$inject = ['$routeProvider'];
+  AppConfig.$inject = ['$routeProvider','$httpProvider'];
 
   function AppRun($rootScope){
     $rootScope.user = {
       firstName: '',
       lastName: ''
     };
+
+    $rootScope.errorField = false;
+    $rootScope.errorMessage = '';
   }
   AppRun.$inject = ['$rootScope'];
 
   // to define the app module, we write:
   angular.module('projectApp',
-                [ 'ngAnimate',
-                  'ngCookies',
-                  'ngMessages',
-                  'ngAria',
-                  'ngResource',
-                  'ngRoute',
-                  'ngSanitize',
-                  'ngTouch',
-                  'projectApp.controllers',
-                  'projectApp.services',
-                  'projectApp.directives',
-                  'ui.grid'])
+                [ 'ngAnimate','ngCookies','ngMessages','ngAria','ngResource','ngRoute','ngSanitize','ngTouch',
+                  'ui.grid',
+                  'httpInterceptor',
+                  'projectApp.controllers','projectApp.services','projectApp.directives'
+                  ])
     .config(AppConfig)
     .run(AppRun);
 

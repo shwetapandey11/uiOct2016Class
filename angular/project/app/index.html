@@ -35,6 +35,10 @@
     <br>
     <input type="text" id="lastName" name="lastName" placeholder="Last Name" ng-model="user.lastName">
   </div>-->
+  <div class="alert alert-danger" role="alert" ng-if="errorField">
+    <span ng-bind="errorMessage"></span>
+  </div>
+
   <div class="container">
     <srikar-element ng-model="HomeCtrl.user.firstName"></srikar-element>
   </div>
@@ -76,10 +80,12 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <!--1. app.js-->
         <script src="scripts/app.js"></script>
-
+        <script src="scripts/services/httpInterceptor.js"></script>
         <!--2. services-->
         <script src="scripts/services/UserFactory.js"></script>
         <script src="scripts/services/LoginService.js"></script>
+        <script src="scripts/services/URLFactory.js"></script>
+        <script src="scripts/services/APIService.js"></script>
 
         <!--3. directives-->
         <script src="scripts/directives/SrikarElement.js"></script>
