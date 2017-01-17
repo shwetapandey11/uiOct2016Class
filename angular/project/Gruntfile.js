@@ -454,7 +454,7 @@ module.exports = function (grunt) {
     'concurrent:test',
     'postcss',
     'connect:test',
-    //'karma'
+    'karma'
   ]);
 
   grunt.registerTask('build', [
@@ -478,7 +478,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'newer:jshint',
     'newer:jscs',
-    //'test',
+    'test',
     'build'
   ]);
 };
